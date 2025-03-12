@@ -1,67 +1,586 @@
-<!doctype html>
- <html lang="fa">
-<head>
+<!DOCTYPE html>
+<html lang="fa">
+<head link rel="stylesheet" href="style.css" >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مسابقات کاراته</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>تمرین اول</title>
 </head>
 <body>
+
     <header>
-        <h1>مسابقات کاراته</h1>
+        <img src="assets/images/logo/my_logo.jpg" alt="لوگوی تمرین 1" width="120">
+        
         <nav>
             <ul>
-                <li><a href="signup.html"><img src="icons/signup.png" alt="ثبت‌نام" width="20"> ثبت‌نام</a></li>
-                <li><a href="signin.html"><img src="icons/signin.png" alt="ورود" width="20"> ورود</a></li>
-                <li><a href="info.html"><img src="icons/info.png" alt="اطلاعات" width="20"> اطلاعات مسابقه</a></li>
+                <li><a href="#">خانه</a></li>
+                <li><a href="#">درباره ما</a></li>
+                <li><a href="#">تماس با ما</a></li>
             </ul>
         </nav>
+
+        <button>ورود / ثبت‌نام</button>
     </header>
 
-    <main>
-        <section>
-            <h2>به مسابقات کاراته خوش آمدید</h2>
-            <img src="images/karate_competition.jpg" alt="مسابقات کاراته" width="400">
-            <p>این مسابقات فرصتی عالی برای رقابت بین بهترین کاراته‌کاهای کشور است. شرکت‌کنندگان می‌توانند مهارت‌های خود را در یک رقابت هیجان‌انگیز به چالش بکشند و برای کسب عناوین قهرمانی تلاش کنند.</p>
-            <a href="signup.html"><button><img src="icons/register.png" alt="ثبت‌نام" width="16"> ثبت‌نام در مسابقه</button></a>
-        </section>
+<!-------------------------------------------------->
+    <section id="event-intro">
+        <img src="assets/images/logo/Graphic_image.jpg" alt="تصویر گرافیکی مسابقه" width="400">
+        
+        <h1>مسابقه برنامه‌نویسی </h1>
+    
+        <p>این مسابقه فرصتی عالی برای دانشجویانی است که می‌خواهند مهارت‌های برنامه نویسی خود را به چالش بکشند و جوایز ارزنده‌ای کسب کنند.</p>
+    
+        <button>ثبت‌نام در مسابقه</button>
+        <button>مشاهده ویدیوها</button>
+    
+        <p><strong>تعداد شرکت‌کنندگان:</strong> ۱۵۰۰ نفر</p>
+        <p><strong>مدت زمان مسابقه:</strong> ۵ ساعت</p>
+    </section>
 
-        <section>
-            <h2  >فرم ثبت‌  نام</h2>
-            <form action="index.html" method="post">
-                <label for="name">نام:</label>
-                <input type="text" id="name" name="name" required><br><br>
-                
-                <label for="email">ایمیل:</label>
-                <input type="email" id="email" name="email" required><br><br>
-                
-                <label for="phone">شماره موبایل:</label>
-                <input type="tel" id="phone" name="phone" required><br><br>
-                
-                <label for="password">رمز عبور:</label>
-                <input type="password" id="password" name="password" required><br><br>
-                
-                <label for="confirm-password">تأیید رمز عبور:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required><br><br>
-                
-                <button type="submit"><img src="icons/submit.png" alt="ثبت" width="16"> ثبت‌نام</button>
-            </form>
-        </section>
+    <!-------------------------------------------------->
+    
+    <section id="sponsors">
+        <h2> اسپانسرهای مسابقه</h2>
+        
+        <ul>
+            <li>
+                <figure>
+                    <img src="assets/images/sponsors/university_of_bojnurd.png" alt="دانشگاه بجنورد" width="150">
+                    <figcaption>دانشگاه بجنورد</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="assets/images/sponsors/sponsor2.png" alt="انجمن علمی مهندسی کامپیوتر" width="150">
+                    <figcaption>انجمن علمی مهندسی کامپیوتر</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="assets/images/sponsors/sponsor3.png" alt="سازمان اموزش فنی و حرفه ای" width="150">
+                    <figcaption>سازمان اموزش فنی و حرفه ای</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="assets/images/sponsors/sponser4.png" alt="سازمان اموزش و پرورش" width="150">
+                    <figcaption>سازمان اموزش و پرورش</figcaption>
+                </figure>
+            </li>
+        </ul>
+    </section>
 
-        <section>
-            <h2>فرم ورود</h2>
-            <form action="index.html" method="post">
-                <label for="login">ایمیل یا شماره موبایل:</label>
-                <input type="text" id="login" name="login" required><br><br>
-                
-                <label for="login-password">رمز عبور:</label>
-                <input type="password" id="login-password" name="login-password" required><br><br>
-                
-                <button type="submit"><img src="icons/login.png" alt="ورود" width="16"> ورود</button>
-            </form>
-        </section>
-    </main>
+    <!-------------------------------------------------->
 
+    <section id="timeline">
+        <h2>نحوه‌ی برگزاری مسابقه</h2>
+    
+        <ol>
+            <li><strong>مرحله ۱:</strong>پاسخ به سؤال .</li>
+            <li><strong>مرحله ۲:</strong> ثبت‌نام .</li>
+            <li><strong>مرحله ۳:</strong> افتتاحیه و مرحله مقدماتی .</li>
+            <li><strong>مرحله ۴:</strong> مرحله نهایی .</li>
+            <li><strong>مرحله ۵:</strong> انتخاب نفر اول .</li>
+            <li><strong>مرحله ۶:</strong> اختتامیه .</li>
+        </ol>
+    </section>
+
+    <!------------------------------------------------------>
+
+    <section id="competition-info">
+        <h2>اطلاعات مسابقه</h2>
+    
+        <div>
+            <h3>قوانین مسابقه</h3>
+            <p>شرکت‌کنندگان باید در طول مسابقه از قوانین تعیین‌شده پیروی کنند. هرگونه تقلب باعث حذف از رقابت خواهد شد.</p>
+        </div>
+    
+        <div>
+            <h3>جوایز مسابقه</h3>
+            <p>نفر اول: 50 میلیون تومان <br> نفر دوم: 35 میلیون تومان <br> نفر سوم: 20 میلیون تومان</p>
+        </div>
+    
+        <div>
+            <h3> مراحل شرکت در مسابقه</h3>
+            <p>۱. ثبت‌نام در سایت <br> ۲. شرکت در مرحله مقدماتی <br> ۳. ورود به فینال و رقابت نهایی</p>
+        </div>
+    </section>
+
+    <!------------------------------------------------------>
+    
+    <section id="gallery">
+        <h2>گالری تصاویر مسابقه</h2>
+    
+        <table>
+            <tr>
+                <td><img src="assets/images/galery/picture1.jpg" alt="عکس  مسابقه" width="200"></td>
+                <td><img src="assets/images/galery/picture2.jpg" alt="عکس  مسابقه" width="200"></td>
+                <td><img src="assets/images/galery/picture3.jpg" alt="عکس  مسابقه" width="200"></td>
+                <td><img src="assets/images/galery/picture4.jpg" alt="عکس  مسابقه" width="200"></td>
+            </tr>
+        </table>
+    </section>
+
+    <!----------------------------------------------------->
+    
+    <section id="team">
+        <h2>تیم برگزارکننده</h2>
+    
+        <table>
+            <tr>
+                <td>
+                    <img src="assets/images/Organizing_team/Responsible1.jpg" alt="عضو اول" width="150" height="150">
+                    <p><strong>محمد رضایی</strong></p>
+                    <p>مدیر اجرایی</p>
+                </td>
+                <td>
+                    <img src="assets/images/Organizing_team/Responsible2.jpg" alt="عضو دوم" width="150" height="150">
+                    <p><strong>علی احمدی</strong></p>
+                    <p>مدیر فنی</p>
+                </td>
+                <td>
+                    <img src="assets/images/Organizing_team/Responsible3.jpg" alt="عضو سوم" width="150" height="150">
+                    <p><strong>محمد کریمی</strong></p>
+                    <p>مدیر مارکتینگ</p>
+                </td>
+                <td>
+                    <img src="assets/images/Organizing_team/Responsible4.jpg" alt="عضو چهارم" width="150" height="150">
+                    <p><strong>سجاد سلطانی</strong></p>
+                    <p>هماهنگ‌کننده</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <!--------------------------------------------------->
+    
+    <section id="contact">
+        <h2>تماس با ما</h2>
+    
+        <p><strong> شماره تماس:</strong> ۰۲۱-۱۲۳۴۵۶۷۸</p>
+        <p><strong> ایمیل:</strong> info@exercise1.com</p>
+        <p><strong> شبکه‌های اجتماعی:</strong> 
+            <a href="#">تلگرام</a> | 
+            <a href="#">اینستاگرام</a> | 
+            <a href="#">لینکدین</a>
+        </p>
+    
+        <form>
+            <label>نام:</label>
+            <input type="text" name="name"><br><br>
+    
+            <label>ایمیل:</label>
+            <input type="email" name="email"><br><br>
+    
+            <label>پیام:</label>
+            <textarea name="message"></textarea><br><br>
+    
+            <button type="submit">ارسال پیام</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>تمامی حقوق محفوظ است © ۲۰۲۵</p>
+    </footer>
     
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="fa">
+<head link rel="stylesheet" href="style.css" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تمرین اول</title>
+</head>
+<body>
+
+    <header>
+        <img src="assets/images/logo/my_logo.jpg" alt="لوگوی تمرین 1" width="120">
+        
+        <nav>
+            <ul>
+                <li><a href="#">خانه</a></li>
+                <li><a href="#">درباره ما</a></li>
+                <li><a href="#">تماس با ما</a></li>
+            </ul>
+        </nav>
+
+        <button>ورود / ثبت‌نام</button>
+    </header>
+
+<!-------------------------------------------------->
+    <section id="event-intro">
+        <img src="assets/images/logo/Graphic_image.jpg" alt="تصویر گرافیکی مسابقه" width="400">
+        
+        <h1>مسابقه برنامه‌نویسی </h1>
+    
+        <p>این مسابقه فرصتی عالی برای دانشجویانی است که می‌خواهند مهارت‌های برنامه نویسی خود را به چالش بکشند و جوایز ارزنده‌ای کسب کنند.</p>
+    
+        <button>ثبت‌نام در مسابقه</button>
+        <button>مشاهده ویدیوها</button>
+    
+        <p><strong>تعداد شرکت‌کنندگان:</strong> ۱۵۰۰ نفر</p>
+        <p><strong>مدت زمان مسابقه:</strong> ۵ ساعت</p>
+    </section>
+
+    <!-------------------------------------------------->
+    
+    <section id="sponsors">
+        <h2> اسپانسرهای مسابقه</h2>
+        
+        <ul>
+            <li>
+                <figure>
+                    <img src="assets/images/sponsors/university_of_bojnurd.png" alt="دانشگاه بجنورد" width="150">
+                    <figcaption>دانشگاه بجنورد</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="assets/images/sponsors/sponsor2.png" alt="انجمن علمی مهندسی کامپیوتر" width="150">
+                    <figcaption>انجمن علمی مهندسی کامپیوتر</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="assets/images/sponsors/sponsor3.png" alt="سازمان اموزش فنی و حرفه ای" width="150">
+                    <figcaption>سازمان اموزش فنی و حرفه ای</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="assets/images/sponsors/sponser4.png" alt="سازمان اموزش و پرورش" width="150">
+                    <figcaption>سازمان اموزش و پرورش</figcaption>
+                </figure>
+            </li>
+        </ul>
+    </section>
+
+    <!-------------------------------------------------->
+
+    <section id="timeline">
+        <h2>نحوه‌ی برگزاری مسابقه</h2>
+    
+        <ol>
+            <li><strong>مرحله ۱:</strong>پاسخ به سؤال .</li>
+            <li><strong>مرحله ۲:</strong> ثبت‌نام .</li>
+            <li><strong>مرحله ۳:</strong> افتتاحیه و مرحله مقدماتی .</li>
+            <li><strong>مرحله ۴:</strong> مرحله نهایی .</li>
+            <li><strong>مرحله ۵:</strong> انتخاب نفر اول .</li>
+            <li><strong>مرحله ۶:</strong> اختتامیه .</li>
+        </ol>
+    </section>
+
+    <!------------------------------------------------------>
+
+    <section id="competition-info">
+        <h2>اطلاعات مسابقه</h2>
+    
+        <div>
+            <h3>قوانین مسابقه</h3>
+            <p>شرکت‌کنندگان باید در طول مسابقه از قوانین تعیین‌شده پیروی کنند. هرگونه تقلب باعث حذف از رقابت خواهد شد.</p>
+        </div>
+    
+        <div>
+            <h3>جوایز مسابقه</h3>
+            <p>نفر اول: 50 میلیون تومان <br> نفر دوم: 35 میلیون تومان <br> نفر سوم: 20 میلیون تومان</p>
+        </div>
+    
+        <div>
+            <h3> مراحل شرکت در مسابقه</h3>
+            <p>۱. ثبت‌نام در سایت <br> ۲. شرکت در مرحله مقدماتی <br> ۳. ورود به فینال و رقابت نهایی</p>
+        </div>
+    </section>
+
+    <!------------------------------------------------------>
+    
+    <section id="gallery">
+        <h2>گالری تصاویر مسابقه</h2>
+    
+        <table>
+            <tr>
+                <td><img src="assets/images/galery/picture1.jpg" alt="عکس  مسابقه" width="200"></td>
+                <td><img src="assets/images/galery/picture2.jpg" alt="عکس  مسابقه" width="200"></td>
+                <td><img src="assets/images/galery/picture3.jpg" alt="عکس  مسابقه" width="200"></td>
+                <td><img src="assets/images/galery/picture4.jpg" alt="عکس  مسابقه" width="200"></td>
+            </tr>
+        </table>
+    </section>
+
+    <!----------------------------------------------------->
+    
+    <section id="team">
+        <h2>تیم برگزارکننده</h2>
+    
+        <table>
+            <tr>
+                <td>
+                    <img src="assets/images/Organizing_team/Responsible1.jpg" alt="عضو اول" width="150" height="150">
+                    <p><strong>محمد رضایی</strong></p>
+                    <p>مدیر اجرایی</p>
+                </td>
+                <td>
+                    <img src="assets/images/Organizing_team/Responsible2.jpg" alt="عضو دوم" width="150" height="150">
+                    <p><strong>علی احمدی</strong></p>
+                    <p>مدیر فنی</p>
+                </td>
+                <td>
+                    <img src="assets/images/Organizing_team/Responsible3.jpg" alt="عضو سوم" width="150" height="150">
+                    <p><strong>محمد کریمی</strong></p>
+                    <p>مدیر مارکتینگ</p>
+                </td>
+                <td>
+                    <img src="assets/images/Organizing_team/Responsible4.jpg" alt="عضو چهارم" width="150" height="150">
+                    <p><strong>سجاد سلطانی</strong></p>
+                    <p>هماهنگ‌کننده</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <!--------------------------------------------------->
+    
+    <section id="contact">
+        <h2>تماس با ما</h2>
+    
+        <p><strong> شماره تماس:</strong> ۰۲۱-۱۲۳۴۵۶۷۸</p>
+        <p><strong> ایمیل:</strong> info@exercise1.com</p>
+        <p><strong> شبکه‌های اجتماعی:</strong> 
+            <a href="#">تلگرام</a> | 
+            <a href="#">اینستاگرام</a> | 
+            <a href="#">لینکدین</a>
+        </p>
+    
+        <form>
+            <label>نام:</label>
+            <input type="text" name="name"><br><br>
+    
+            <label>ایمیل:</label>
+            <input type="email" name="email"><br><br>
+    
+            <label>پیام:</label>
+            <textarea name="message"></textarea><br><br>
+    
+            <button type="submit">ارسال پیام</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>تمامی حقوق محفوظ است © ۲۰۲۵</p>
+    </footer>
+    
+</body>
+</html>
+//
+
+body {
+    font-family: 'Arial', "amaranth" , "alfa-slab-one";
+    direction: ltr;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    background-color: #FFE500;
+    line-height: 1.8;
+}
+
+/* هدر */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: linear-gradient(135deg, #0056b3, #007bff);
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: #007bff;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* بخش معرفی رویداد */
+#event-intro {
+    text-align: center;
+    padding: 60px;
+    background: url('assets/images/background.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+#event-intro h1 {
+    color: #ffcc00;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#event-intro button {
+    margin: 10px;
+}
+
+/* اسپانسرها */
+#sponsors {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+#sponsors ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+#sponsors li {
+    margin: 20px;
+}
+
+#sponsors img {
+    transition: transform 0.3s;
+}
+
+#sponsors img:hover {
+    transform: scale(1.1);
+}
+
+/* جدول مراحل مسابقه */
+#timeline {
+    background-color: #d6e9f8;
+    padding: 50px;
+}
+
+#timeline ol {
+    padding-right: 40px;
+    font-size: 18px;
+    line-height: 2;
+}
+
+/* گالری */
+#gallery {
+    text-align: center;
+    padding: 60px;
+}
+
+#gallery table {
+    margin: auto;
+}
+
+#gallery img {
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+#gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* اطلاعات مسابقه */
+#competition-info {
+    padding: 50px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+#competition-info div {
+    margin-bottom: 25px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* تیم برگزارکننده */
+#team {
+    text-align: center;
+    padding: 60px;
+}
+
+#team table {
+    margin: auto;
+}
+
+#team img {
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+#team img:hover {
+    transform: scale(1.1);
+}
+
+/* فرم تماس */
+#contact {
+    padding: 50px;
+    background-color: #e3f2fd;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    text-align: right;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+/* فوتر */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
