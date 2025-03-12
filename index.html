@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style1.css">
     <title>تمرین اول</title>
 </head>
 <body>
-
-    <header>
-        <img src="assets/images/logo/my_logo.jpg" alt="لوگوی تمرین 1" width="120">
-        
+    <header>        
         <nav>
             <ul>
                 <li><a href="#">خانه</a></li>
@@ -23,14 +21,14 @@
 
 <!-------------------------------------------------->
     <section id="event-intro">
-        <img src="assets/images/logo/Graphic_image.jpg" alt="تصویر گرافیکی مسابقه" width="400">
+        <img id="img1" src="assets/images/Group 14282.svg" alt="تصویر گرافیکی مسابقه" width="400">
         
-        <h1>مسابقه برنامه‌نویسی </h1>
+        <h1 id="h1">پنجمین دوره مسابقات برنامه نویسی آنلاین دانشگاه دولتی بجنورد</h1>
     
-        <p>این مسابقه فرصتی عالی برای دانشجویانی است که می‌خواهند مهارت‌های برنامه نویسی خود را به چالش بکشند و جوایز ارزنده‌ای کسب کنند.</p>
+        <p id="p1">این مسابقه فرصتی عالی برای دانشجویانی است که می‌خواهند مهارت‌های برنامه نویسی خود را به چالش بکشند و جوایز ارزنده‌ای کسب کنند.</p>
     
-        <button>ثبت‌نام در مسابقه</button>
-        <button>مشاهده ویدیوها</button>
+        <button id="button1">ثبت‌نام در مسابقه</button>
+        <button id="button2">مشاهده ویدیوها</button>
     
         <p><strong>تعداد شرکت‌کنندگان:</strong> ۱۵۰۰ نفر</p>
         <p><strong>مدت زمان مسابقه:</strong> ۵ ساعت</p>
@@ -39,31 +37,31 @@
     <!-------------------------------------------------->
     
     <section id="sponsors">
-        <h2> اسپانسرهای مسابقه</h2>
+       <!-- <h2> اسپانسرهای مسابقه</h2>-->
         
         <ul>
             <li>
                 <figure>
                     <img src="assets/images/sponsors/university_of_bojnurd.png" alt="دانشگاه بجنورد" width="150">
-                    <figcaption>دانشگاه بجنورد</figcaption>
+                  <!-- <figcaption>دانشگاه بجنورد</figcaption>-->
                 </figure>
             </li>
             <li>
                 <figure>
                     <img src="assets/images/sponsors/sponsor2.png" alt="انجمن علمی مهندسی کامپیوتر" width="150">
-                    <figcaption>انجمن علمی مهندسی کامپیوتر</figcaption>
+                    <!--<figcaption>انجمن علمی مهندسی کامپیوتر</figcaption>-->
                 </figure>
             </li>
             <li>
                 <figure>
                     <img src="assets/images/sponsors/sponsor3.png" alt="سازمان اموزش فنی و حرفه ای" width="150">
-                    <figcaption>سازمان اموزش فنی و حرفه ای</figcaption>
+                  <!--  <figcaption>سازمان اموزش فنی و حرفه ای</figcaption>-->
                 </figure>
             </li>
             <li>
                 <figure>
                     <img src="assets/images/sponsors/sponser4.png" alt="سازمان اموزش و پرورش" width="150">
-                    <figcaption>سازمان اموزش و پرورش</figcaption>
+                    <!--<figcaption>سازمان اموزش و پرورش</figcaption>-->
                 </figure>
             </li>
         </ul>
@@ -72,7 +70,7 @@
     <!-------------------------------------------------->
 
     <section id="timeline">
-        <h2>نحوه‌ی برگزاری مسابقه</h2>
+        <h2 id="h2">نحوه‌ی برگزاری مسابقه</h2>
     
         <ol>
             <li><strong>مرحله ۱:</strong>پاسخ به سؤال .</li>
@@ -116,6 +114,12 @@
                 <td><img src="assets/images/galery/picture2.jpg" alt="عکس  مسابقه" width="200"></td>
                 <td><img src="assets/images/galery/picture3.jpg" alt="عکس  مسابقه" width="200"></td>
                 <td><img src="assets/images/galery/picture4.jpg" alt="عکس  مسابقه" width="200"></td>
+                <td><img src="assets/images/galery/picture5.png" alt="عکس مسابقه" width="200" /></td>
+                    <td><img src="assets/images/galery/picture6.png" alt="عکس مسابقه" width="200" /></td>
+                    <td><img src="assets/images/galery/picture7.png" alt="عکس مسابقه" width="200" /></td>
+                    <td><img src="assets/images/galery/picture8.png" alt="عکس مسابقه" width="200" /></td>
+                    <td><img src="assets/images/galery/picture9.png" alt="عکس مسابقه" width="200" /></td>
+               
             </tr>
         </table>
     </section>
@@ -156,15 +160,15 @@
     <section id="contact">
         <h2>تماس با ما</h2>
     
-        <p><strong> شماره تماس:</strong> ۰۲۱-۱۲۳۴۵۶۷۸</p>
-        <p><strong> ایمیل:</strong> info@exercise1.com</p>
-        <p><strong> شبکه‌های اجتماعی:</strong> 
+        <p class="p"><strong> شماره تماس:</strong> ۰۲۱-۱۲۳۴۵۶۷۸</p>
+        <p id="pemail"><strong> ایمیل:</strong> info@exercise1.com</p>
+        <p class="p"><strong> شبکه‌های اجتماعی:</strong> 
             <a href="#">تلگرام</a> | 
             <a href="#">اینستاگرام</a> | 
             <a href="#">لینکدین</a>
         </p>
     
-        <form>
+        <!--<form>
             <label>نام:</label>
             <input type="text" name="name"><br><br>
     
@@ -175,7 +179,7 @@
             <textarea name="message"></textarea><br><br>
     
             <button type="submit">ارسال پیام</button>
-        </form>
+        </form>-->
     </section>
     
     <footer>
