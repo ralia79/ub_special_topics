@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تمرین اول</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Vazirmatn', sans-serif;
+        }
+        
+        body {
+            background-color: #121212;
+            color: white;
+            direction: rtl;
+            text-align: right;
+            line-height: 1.6;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        button {
+            background-color: #17B978;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        #event-intro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+        }
+        
+        #event-intro h1 {
+            font-size: 32px;
+            margin: 20px 0;
+        }
+        
+        #event-intro p {
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+        
+        #event-intro img {
+            max-width: 400px;
+        }
+        
+        .buttons-container {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stats-container {
+            display: flex;
+            gap: 50px;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-item .number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #17B978;
+        }
+        
+        #sponsors {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        #sponsors h2 {
+            margin-bottom: 30px;
+        }
+        
+        .sponsors-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .sponsor-item {
+            text-align: center;
+        }
+        
+        .sponsor-item img {
+            height: 60px;
+            object-fit: contain;
+            margin-bottom: 10px;
+            filter: grayscale(100%) brightness(150%);
+        }
+        
+        #timeline {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        #timeline h2 {
+            margin-bottom: 50px;
+        }
+        
+        .timeline-container {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .timeline-path {
+            position: absolute;
+            width: 80%;
+            height: auto;
+            z-index: 0;
+        }
+        
+        .timeline-items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px 150px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .timeline-item {
+            background-color: rgba(23, 185, 120, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .timeline-item .number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #17B978;
+        }
+        
+        #competition-info {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: rgba(23, 185, 120, 0.05);
+            position: relative;
+        }
+        
+        #competition-info h2 {
+            margin-bottom: 50px;
+        }
+        
+        .info-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .info-item {
+            background-color: rgba(23, 185, 120, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            width: 250px;
+            position: relative;
+        }
+        
+        .info-item h3 {
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #17B978;
+        }
+        
+        .info-item-icon {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #17B978;
+            color: white;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 20px;
+        }
+        
+        #gallery {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        #gallery h2 {
+            margin-bottom: 30px;
+        }
+        
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        #team {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        #team h2 {
+            margin-bottom: 30px;
+        }
+        
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .team-member {
+            text-align: center;
+            position: relative;
+        }
+        
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            background-color: #17B978;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        #contact {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: rgba(23, 185, 120, 0.05);
+        }
+        
+        #contact h2 {
+            margin-bottom: 30px;
+        }
+        
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: grid;
+            gap: 15px;
+        }
+        
+        .form-group {
+            display: flex;
+            align-items: center;
+        }
+        
+        .form-group label {
+            width: 100px;
+            text-align: right;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            flex-grow: 1;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+        
+        footer {
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 50px;
+            font-size: 14px;
+        }
+        
+        /* Custom SVG path for timeline */
+        .timeline-path {
+            stroke: #17B978;
+            stroke-width: 3;
+            fill: none;
+        }
+        
+        /* Custom styling for dark mode elements */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+        
+        /* Add rocket emoji styling */
+        .rocket {
+            display: inline-block;
+            transform: rotate(45deg);
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="assets/images/logo/my_logo.jpg" alt="لوگوی تمرین 1" width="120" style="filter: brightness(1.5);">
+        
+        <nav>
+            <ul>
+                <li><a href="#">خانه</a></li>
+                <li><a href="#">درباره ما</a></li>
+                <li><a href="#">تماس با ما</a></li>
+            </ul>
+        </nav>
+
+        <button>ورود / ثبت‌نام</button>
+    </header>
+
+    <section id="event-intro">
+        <div style="position: relative; margin-bottom: 20px;">
+            <img src="assets/images/logo/Graphic_image.jpg" alt="تصویر گرافیکی مسابقه" width="400" style="border-radius: 20px;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle, rgba(23,185,120,0.2) 0%, rgba(0,0,0,0) 70%);"></div>
+        </div>
+        
+        <h1>پنجمین دوره مسابقات برنامه‌نویسی آنلاین دانشگاه بجنورد <span class="rocket">🚀</span></h1>
+    
+        <p style="color: #aaa; max-width: 600px;">این مسابقه فرصتی عالی برای دانشجویانی است که می‌خواهند مهارت‌های برنامه نویسی خود را به چالش بکشند و جوایز ارزنده‌ای کسب کنند.</p>
+    
+        <div class="buttons-container">
+            <button style="background-color: #17B978;">ثبت‌نام در مسابقه</button>
+            <button style="background-color: transparent; border: 1px solid #17B978;">مشاهده ویدیوها</button>
+        </div>
+    
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="number">۱۵۰۰</div>
+                <div>شرکت‌کنندگان</div>
+            </div>
+            <div class="stat-item">
+                <div class="number">۵</div>
+                <div>ساعت مسابقه</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sponsors">
+        <h2 style="color: #17B978;"> اسپانسرهای مسابقه</h2>
+        
+        <div class="sponsors-container">
+            <div class="sponsor-item">
+                <img src="assets/images/sponsors/university_of_bojnurd.png" alt="دانشگاه بجنورد">
+                <div>دانشگاه بجنورد</div>
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/sponsors/sponsor2.png" alt="انجمن علمی مهندسی کامپیوتر">
+                <div>انجمن علمی مهندسی کامپیوتر</div>
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/sponsors/sponsor3.png" alt="سازمان اموزش فنی و حرفه ای">
+                <div>سازمان اموزش فنی و حرفه ای</div>
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/sponsors/sponser4.png" alt="سازمان اموزش و پرورش">
+                <div>سازمان اموزش و پرورش</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline">
+        <h2 style="color: #17B978;">نحوه‌ی برگزاری مسابقه</h2>
+    
+        <div class="timeline-container">
+            <svg class="timeline-path" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50,50 C100,50 100,100 150,100 C200,100 200,150 250,150 C300,150 300,200 350,200" stroke="#17B978" stroke-width="3" fill="none"/>
+            </svg>
+            
+            <div class="timeline-items">
+                <div class="timeline-item" style="grid-column: 1; grid-row: 1;">
+                    <div class="number">1</div>
+                    <div>پاسخ به سؤال</div>
+                </div>
+                <div class="timeline-item" style="grid-column: 2; grid-row: 1;">
+                    <div class="number">2</div>
+                    <div>ثبت‌نام</div>
+                </div>
+                <div class="timeline-item" style="grid-column: 1; grid-row: 2;">
+                    <div class="number">3</div>
+                    <div>افتتاحیه و مرحله مقدماتی</div>
+                </div>
+                <div class="timeline-item" style="grid-column: 2; grid-row: 2;">
+                    <div class="number">4</div>
+                    <div>مرحله نهایی</div>
+                </div>
+                <div class="timeline-item" style="grid-column: 1; grid-row: 3;">
+                    <div class="number">5</div>
+                    <div>انتخاب نفر اول</div>
+                </div>
+                <div class="timeline-item" style="grid-column: 2; grid-row: 3;">
+                    <div class="number">6</div>
+                    <div>اختتامیه</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competition-info">
+        <h2 style="color: #17B978;">اطلاعات مسابقه</h2>
+    
+        <div class="info-container">
+            <div class="info-item">
+                <div class="info-item-icon">📋</div>
+                <h3>قوانین مسابقه</h3>
+                <p>شرکت‌کنندگان باید در طول مسابقه از قوانین تعیین‌شده پیروی کنند. هرگونه تقلب باعث حذف از رقابت خواهد شد.</p>
+            </div>
+    
+            <div class="info-item">
+                <div class="info-item-icon">🏆</div>
+                <h3>جوایز مسابقه</h3>
+                <p>نفر اول: 50 میلیون تومان <br> نفر دوم: 35 میلیون تومان <br> نفر سوم: 20 میلیون تومان</p>
+            </div>
+    
+            <div class="info-item">
+                <div class="info-item-icon">🔄</div>
+                <h3>مراحل شرکت در مسابقه</h3>
+                <p>۱. ثبت‌نام در سایت <br> ۲. شرکت در مرحله مقدماتی <br> ۳. ورود به فینال و رقابت نهایی</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="gallery">
+        <h2 style="color: #17B978;">گالری تصاویر مسابقه</h2>
+    
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="assets/images/galery/picture1.jpg" alt="عکس مسابقه">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/galery/picture2.jpg" alt="عکس مسابقه">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/galery/picture3.jpg" alt="عکس مسابقه">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/galery/picture4.jpg" alt="عکس مسابقه">
+            </div>
+        </div>
+    </section>
+    
+    <section id="team">
+        <h2 style="color: #17B978;">تیم برگزارکننده</h2>
+    
+        <div class="team-container">
+            <div class="team-member">
+                <img src="assets/images/Organizing_team/Responsible1.jpg" alt="عضو اول">
+                <p style="font-weight: bold; margin-bottom: 5px;">محمد رضایی</p>
+                <p style="color: #17B978;">مدیر اجرایی</p>
+                <div class="social-icons">
+                    <div class="social-icon">in</div>
+                    <div class="social-icon">t</div>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="assets/images/Organizing_team/Responsible2.jpg" alt="عضو دوم">
+                <p style="font-weight: bold; margin-bottom: 5px;">علی احمدی</p>
+                <p style="color: #17B978;">مدیر فنی</p>
+                <div class="social-icons">
+                    <div class="social-icon">in</div>
+                    <div class="social-icon">t</div>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="assets/images/Organizing_team/Responsible3.jpg" alt="عضو سوم">
+                <p style="font-weight: bold; margin-bottom: 5px;">محمد کریمی</p>
+                <p style="color: #17B978;">مدیر مارکتینگ</p>
+                <div class="social-icons">
+                    <div class="social-icon">in</div>
+                    <div class="social-icon">t</div>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="assets/images/Organizing_team/Responsible4.jpg" alt="عضو چهارم">
+                <p style="font-weight: bold; margin-bottom: 5px;">سجاد سلطانی</p>
+                <p style="color: #17B978;">هماهنگ‌کننده</p>
+                <div class="social-icons">
+                    <div class="social-icon">in</div>
+                    <div class="social-icon">t</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2 style="color: #17B978;">تماس با ما</h2>
+    
+        <div class="contact-info">
+            <p><strong style="color: #17B978;"> شماره تماس:</strong> ۰۲۱-۱۲۳۴۵۶۷۸</p>
+            <p><strong style="color: #17B978;"> ایمیل:</strong> info@exercise1.com</p>
+            <p><strong style="color: #17B978;"> شبکه‌های اجتماعی:</strong> 
+                <a href="#" style="color: #17B978; text-decoration: none;">تلگرام</a> | 
+                <a href="#" style="color: #17B978; text-decoration: none;">اینستاگرام</a> | 
+                <a href="#" style="color: #17B978; text-decoration: none;">لینکدین</a>
+            </p>
+        </div>
+    
+        <form class="contact-form">
+            <div class="form-group">
+                <label>نام:</label>
+                <input type="text" name="name">
+            </div>
+    
+            <div class="form-group">
+                <label>ایمیل:</label>
+                <input type="email" name="email">
+            </div>
+    
+            <div class="form-group">
+                <label>پیام:</label>
+                <textarea name="message" rows="5"></textarea>
+            </div>
+    
+            <button type="submit" style="width: 150px; margin: 0 auto;">ارسال پیام</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>تمامی حقوق محفوظ است © ۲۰۲۵</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,180 +1,232 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تمرین اول</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <img src="assets/images/logo/my_logo.jpg" alt="لوگوی تمرین 1" width="120">
+        <img src="assets/images/logo/my_logo.jpg" alt="لوگوی تمرین 1" width="120" class="logo-image">
         
         <nav>
             <ul>
                 <li><a href="#">خانه</a></li>
                 <li><a href="#">درباره ما</a></li>
                 <li><a href="#">تماس با ما</a></li>
+                <a href="#"><img src="assets/images/Arrow - Down 2.png" alt="down arrow photo" ></a>
             </ul>
         </nav>
 
         <button>ورود / ثبت‌نام</button>
     </header>
 
-<!-------------------------------------------------->
     <section id="event-intro">
-        <img src="assets/images/logo/Graphic_image.jpg" alt="تصویر گرافیکی مسابقه" width="400">
+        <div class="event-image-container">
+            <img src="assets/images/Group 14282.png" alt="تصویر گرافیکی مسابقه" class="base">
+            <img src="assets/images/Group 14261.png" alt="تصویر کد" class="second-overlay">
+            <img src="assets/images/Group 14262.png" alt="لوگو سی شارپ" class="third-overlay">
+        </div>
+        <div class="event-content">
+            <h1>پنجمین دوره مسابقات برنامه‌نویسی آنلاین دانشگاه بجنورد 🚀</span></h1>
+    
+            <p style="color: #aaa;">این مسابقه فرصتی عالی برای دانشجویانی است که می‌خواهند مهارت‌های برنامه نویسی خود را به چالش بکشند و جوایز ارزنده‌ای کسب کنند.</p>
+    
+            <div class="buttons-container">
+                <button class="primary-button">ثبت‌نام در مسابقه</button>
+                <button class="secondary-button">مشاهده ویدیوها</button>
+            </div>
         
-        <h1>مسابقه برنامه‌نویسی </h1>
-    
-        <p>این مسابقه فرصتی عالی برای دانشجویانی است که می‌خواهند مهارت‌های برنامه نویسی خود را به چالش بکشند و جوایز ارزنده‌ای کسب کنند.</p>
-    
-        <button>ثبت‌نام در مسابقه</button>
-        <button>مشاهده ویدیوها</button>
-    
-        <p><strong>تعداد شرکت‌کنندگان:</strong> ۱۵۰۰ نفر</p>
-        <p><strong>مدت زمان مسابقه:</strong> ۵ ساعت</p>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="number">۱۵۰۰</div>
+                    <div>شرکت‌کنندگان</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">۵</div>
+                    <div>ساعت مسابقه</div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-------------------------------------------------->
-    
     <section id="sponsors">
-        <h2> اسپانسرهای مسابقه</h2>
+        <h2>اسپانسرهای مسابقه</h2>
         
-        <ul>
-            <li>
-                <figure>
-                    <img src="assets/images/sponsors/university_of_bojnurd.png" alt="دانشگاه بجنورد" width="150">
-                    <figcaption>دانشگاه بجنورد</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img src="assets/images/sponsors/sponsor2.png" alt="انجمن علمی مهندسی کامپیوتر" width="150">
-                    <figcaption>انجمن علمی مهندسی کامپیوتر</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img src="assets/images/sponsors/sponsor3.png" alt="سازمان اموزش فنی و حرفه ای" width="150">
-                    <figcaption>سازمان اموزش فنی و حرفه ای</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img src="assets/images/sponsors/sponser4.png" alt="سازمان اموزش و پرورش" width="150">
-                    <figcaption>سازمان اموزش و پرورش</figcaption>
-                </figure>
-            </li>
-        </ul>
+        <div class="sponsors-container">
+            <div class="sponsor-item">
+                <img src="assets/images/sponsors/university_of_bojnurd.png" alt="دانشگاه بجنورد">
+                <div>دانشگاه بجنورد</div>
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/sponsors/sponsor2.png" alt="انجمن علمی مهندسی کامپیوتر">
+                <div>انجمن علمی مهندسی کامپیوتر</div>
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/sponsors/sponsor3.png" alt="سازمان اموزش فنی و حرفه ای">
+                <div>سازمان اموزش فنی و حرفه ای</div>
+            </div>
+            <div class="sponsor-item">
+                <img src="assets/images/sponsors/sponser4.png" alt="سازمان اموزش و پرورش">
+                <div>سازمان اموزش و پرورش</div>
+            </div>
+        </div>
     </section>
-
-    <!-------------------------------------------------->
 
     <section id="timeline">
         <h2>نحوه‌ی برگزاری مسابقه</h2>
     
-        <ol>
-            <li><strong>مرحله ۱:</strong>پاسخ به سؤال .</li>
-            <li><strong>مرحله ۲:</strong> ثبت‌نام .</li>
-            <li><strong>مرحله ۳:</strong> افتتاحیه و مرحله مقدماتی .</li>
-            <li><strong>مرحله ۴:</strong> مرحله نهایی .</li>
-            <li><strong>مرحله ۵:</strong> انتخاب نفر اول .</li>
-            <li><strong>مرحله ۶:</strong> اختتامیه .</li>
-        </ol>
+        <div class="timeline-container">
+            <div class="timeline-items">
+                <div class="timeline-item" style="grid-column: 1; grid-row: 1;">
+                    <div class="number">1</div>
+                    <div>پاسخ به سؤال</div>
+                </div>
+                <div class="timeline-item" style="grid-column: 2; grid-row: 1;">
+                    <div class="number">2</div>
+                    <div>ثبت‌نام</div>
+                </div>
+                <div class="timeline-item" style="grid-column: 1; grid-row: 2;">
+                    <div class="number">3</div>
+                    <div>افتتاحیه و مرحله مقدماتی</div>
+                </div>
+                <div class="timeline-item" style="grid-column: 2; grid-row: 2;">
+                    <div class="number">4</div>
+                    <div>مرحله نهایی</div>
+                </div>
+                <div class="timeline-item" style="grid-column: 1; grid-row: 3;">
+                    <div class="number">5</div>
+                    <div>انتخاب نفر اول</div>
+                </div>
+                <div class="timeline-item" style="grid-column: 2; grid-row: 3;">
+                    <div class="number">6</div>
+                    <div>اختتامیه</div>
+                </div>
+    
+    
+    </div>
+</div>
+        </div>
     </section>
-
-    <!------------------------------------------------------>
 
     <section id="competition-info">
         <h2>اطلاعات مسابقه</h2>
     
-        <div>
-            <h3>قوانین مسابقه</h3>
-            <p>شرکت‌کنندگان باید در طول مسابقه از قوانین تعیین‌شده پیروی کنند. هرگونه تقلب باعث حذف از رقابت خواهد شد.</p>
-        </div>
+        <div class="info-container">
+            <div class="info-item">
+                <div class="info-item-icon">📋</div>
+                <h3>قوانین مسابقه</h3>
+                <p>شرکت‌کنندگان باید در طول مسابقه از قوانین تعیین‌شده پیروی کنند. هرگونه تقلب باعث حذف از رقابت خواهد شد.</p>
+            </div>
     
-        <div>
-            <h3>جوایز مسابقه</h3>
-            <p>نفر اول: 50 میلیون تومان <br> نفر دوم: 35 میلیون تومان <br> نفر سوم: 20 میلیون تومان</p>
-        </div>
+            <div class="info-item">
+                <div class="info-item-icon">🏆</div>
+                <h3>جوایز مسابقه</h3>
+                <p>نفر اول: 50 میلیون تومان <br> نفر دوم: 35 میلیون تومان <br> نفر سوم: 20 میلیون تومان</p>
+            </div>
     
-        <div>
-            <h3> مراحل شرکت در مسابقه</h3>
-            <p>۱. ثبت‌نام در سایت <br> ۲. شرکت در مرحله مقدماتی <br> ۳. ورود به فینال و رقابت نهایی</p>
+            <div class="info-item">
+                <div class="info-item-icon">🔄</div>
+                <h3>مراحل شرکت در مسابقه</h3>
+                <p>۱. ثبت‌نام در سایت <br> ۲. شرکت در مرحله مقدماتی <br> ۳. ورود به فینال و رقابت نهایی</p>
+            </div>
         </div>
     </section>
-
-    <!------------------------------------------------------>
     
     <section id="gallery">
         <h2>گالری تصاویر مسابقه</h2>
     
-        <table>
-            <tr>
-                <td><img src="assets/images/galery/picture1.jpg" alt="عکس  مسابقه" width="200"></td>
-                <td><img src="assets/images/galery/picture2.jpg" alt="عکس  مسابقه" width="200"></td>
-                <td><img src="assets/images/galery/picture3.jpg" alt="عکس  مسابقه" width="200"></td>
-                <td><img src="assets/images/galery/picture4.jpg" alt="عکس  مسابقه" width="200"></td>
-            </tr>
-        </table>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="assets/images/galery/picture1.jpg" alt="عکس مسابقه">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/galery/picture2.jpg" alt="عکس مسابقه">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/galery/picture3.jpg" alt="عکس مسابقه">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/galery/picture4.jpg" alt="عکس مسابقه">
+            </div>
+        </div>
     </section>
-
-    <!----------------------------------------------------->
     
     <section id="team">
         <h2>تیم برگزارکننده</h2>
     
-        <table>
-            <tr>
-                <td>
-                    <img src="assets/images/Organizing_team/Responsible1.jpg" alt="عضو اول" width="150" height="150">
-                    <p><strong>محمد رضایی</strong></p>
-                    <p>مدیر اجرایی</p>
-                </td>
-                <td>
-                    <img src="assets/images/Organizing_team/Responsible2.jpg" alt="عضو دوم" width="150" height="150">
-                    <p><strong>علی احمدی</strong></p>
-                    <p>مدیر فنی</p>
-                </td>
-                <td>
-                    <img src="assets/images/Organizing_team/Responsible3.jpg" alt="عضو سوم" width="150" height="150">
-                    <p><strong>محمد کریمی</strong></p>
-                    <p>مدیر مارکتینگ</p>
-                </td>
-                <td>
-                    <img src="assets/images/Organizing_team/Responsible4.jpg" alt="عضو چهارم" width="150" height="150">
-                    <p><strong>سجاد سلطانی</strong></p>
-                    <p>هماهنگ‌کننده</p>
-                </td>
-            </tr>
-        </table>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="assets/images/Organizing_team/Responsible1.jpg" alt="عضو اول">
+                <p class="team-member-name">محمد رضایی</p>
+                <p class="team-member-role">مدیر اجرایی</p>
+                <div class="social-icons">
+                    <div class="social-icon">in</div>
+                    <div class="social-icon">t</div>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="assets/images/Organizing_team/Responsible2.jpg" alt="عضو دوم">
+                <p class="team-member-name">علی احمدی</p>
+                <p class="team-member-role">مدیر فنی</p>
+                <div class="social-icons">
+                    <div class="social-icon">in</div>
+                    <div class="social-icon">t</div>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="assets/images/Organizing_team/Responsible3.jpg" alt="عضو سوم">
+                <p class="team-member-name">محمد کریمی</p>
+                <p class="team-member-role">مدیر مارکتینگ</p>
+                <div class="social-icons">
+                    <div class="social-icon">in</div>
+                    <div class="social-icon">t</div>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="assets/images/Organizing_team/Responsible4.jpg" alt="عضو چهارم">
+                <p class="team-member-name">سجاد سلطانی</p>
+                <p class="team-member-role">هماهنگ‌کننده</p>
+                <div class="social-icons">
+                    <div class="social-icon">in</div>
+                    <div class="social-icon">t</div>
+                </div>
+            </div>
+        </div>
     </section>
-
-    <!--------------------------------------------------->
     
     <section id="contact">
         <h2>تماس با ما</h2>
     
-        <p><strong> شماره تماس:</strong> ۰۲۱-۱۲۳۴۵۶۷۸</p>
-        <p><strong> ایمیل:</strong> info@exercise1.com</p>
-        <p><strong> شبکه‌های اجتماعی:</strong> 
-            <a href="#">تلگرام</a> | 
-            <a href="#">اینستاگرام</a> | 
-            <a href="#">لینکدین</a>
-        </p>
+        <div class="contact-info">
+            <p><strong class="contact-label"> شماره تماس:</strong> ۰۲۱-۱۲۳۴۵۶۷۸</p>
+            <p><strong class="contact-label"> ایمیل:</strong> info@exercise1.com</p>
+            <p><strong class="contact-label"> شبکه‌های اجتماعی:</strong> 
+                <a href="#" class="contact-link">تلگرام</a> | 
+                <a href="#" class="contact-link">اینستاگرام</a> | 
+                <a href="#" class="contact-link">لینکدین</a>
+            </p>
+        </div>
     
-        <form>
-            <label>نام:</label>
-            <input type="text" name="name"><br><br>
+        <form class="contact-form">
+            <div class="form-group">
+                <label>نام:</label>
+                <input type="text" name="name">
+            </div>
     
-            <label>ایمیل:</label>
-            <input type="email" name="email"><br><br>
+            <div class="form-group">
+                <label>ایمیل:</label>
+                <input type="email" name="email">
+            </div>
     
-            <label>پیام:</label>
-            <textarea name="message"></textarea><br><br>
+            <div class="form-group">
+                <label>پیام:</label>
+                <textarea name="message" rows="5"></textarea>
+            </div>
     
-            <button type="submit">ارسال پیام</button>
+            <button type="submit" class="submit-button">ارسال پیام</button>
         </form>
     </section>
     
