@@ -1,0 +1,600 @@
+
+body {
+    font-family: 'Kalameh', Arial, sans-serif;
+    direction: rtl;
+    background-color: #0d0d0d;
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-section{
+
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+
+}
+
+
+header {
+    background-color: #111;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    left : 1000px;
+}
+
+.header-logo {
+    width: 32px;
+    height: 26.537px;
+    flex-shrink: 0;
+    left : 1000px;
+}
+
+.logo-text {
+    color: #FFF;
+    text-align: center;
+    font-family: Kalameh;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px; /* 72.222% */
+    margin: 5px 0 0; /* فاصله از لوگو */
+    left : 1000px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    position: relative;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.register-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    background: none;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* محتوای اصلی */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    gap: 30px;
+}
+
+.info {
+    max-width: 600px;
+}
+
+h1 {
+    color: #FFF;
+    text-align: right;
+    font-family: Kalameh;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin: 0 0 10px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #FFF;
+    text-align: right;
+    font-family: Kalameh;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 10px 0;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.sub1 {
+    position: relative;
+}
+
+.sub1 img {
+    display: block;
+}
+
+.register-btn1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.video-link {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* فاصله بین تصویر و متن */
+}
+
+.video-icon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.watch-video {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.stats img {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 10px 10px 10px 60px;
+    display: inline-block;
+ 
+    
+}
+.stats .item {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 10px 15px 10px 80px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.stats p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+.image-container {
+    position: relative;
+    max-width: 400px;
+}
+
+.code-snippet {
+    padding: 80px;
+    border-radius: 5px;
+    width: 300px;
+    max-width: 150px;
+    margin-top: -900px;
+    margin-left: +50px;
+    bottom: -300px;
+    position: absolute;
+    right: 150px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    text-align: right;
+    
+}
+
+
+
+.code-snippet pre {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: #101110;
+    white-space: pre-wrap;
+}
+
+/* اسپانسرها */
+.sponsor {
+    position: relative;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.sponsor img {
+    width: 100%;
+    max-width: 1022px;
+    height: 92px;
+    object-fit: cover;
+}
+
+.sponsors {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 15px;
+}
+
+.sponsors img {
+    width: 121px;
+    height: 44px;
+    object-fit: contain;
+}
+
+/* نحوه برگزاری مسابقه */
+.time
+{
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+    
+}
+.cont {
+    position: relative;
+    text-align: center;
+}
+
+.cont {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.s1, .s2, .s3, .s4, .s5, .s6 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.s1 { top: 50px; right: 60%; }
+.s2 { top: 120px; right: 50%; }
+.s3 { top: 180px; right: 55%; }
+.s4 { top: 270px; right: 37%; }
+.s5 { top: 350px; right: 50%; }
+.s6 { top: 400px; right: 35%; }
+
+.s1 p, .s2 p, .s3 p, .s4 p, .s5 p, .s6 p {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+
+
+
+/* ----------------- infooooo*/
+
+
+.information {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+}
+
+.cont2 {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.center-oval {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 540px;
+    height: 263px;
+    flex-shrink: 0;
+    fill: #47CF73;
+    filter: drop-shadow(0px 0px 30px rgba(71, 207, 115, 0.40))
+}
+
+.center-oval img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* برای وسط قرار گرفتن تصویر */
+}
+
+.text-overlay {
+    position: absolute;
+    text-align: center;
+    flex-shrink: 0;
+    color: #131417;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 21px;
+    z-index: 2;
+}
+
+.c1, .c2, .c3, .c4 {
+    position: absolute;
+    width: 126px;
+    height: 168px;
+    color: #FFF;
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* پایه برای کارت‌ها */
+}
+
+.c1 {
+    top: 15%; /* کمی فاصله بیشتر برای جلوگیری از روی هم افتادن */
+    left: 15%; /* کمی فاصله بیشتر */
+    transform: rotate(-9.915deg);
+    flex-shrink: 0;
+    z-index: 3; /* اولویت بالاتر */
+}
+
+.c2 {
+    top: 10%;
+    right: 10%;
+    width: 126px;
+    height: 168px;
+    transform: rotate(8.772deg);
+    flex-shrink: 0;
+}
+
+.c3 {
+    bottom: 10%;
+    left: 10%;
+    width: 126px;
+    height: 168px;
+    transform: rotate(9.541deg);
+    flex-shrink: 0;
+}
+
+.c4 {
+    bottom: 10%;
+    right: 10%;
+    width: 126px;
+    height: 168px;
+    transform: rotate(-11.953deg);
+    flex-shrink: 0;
+}
+
+.c1 img, .c2 img, .c3 img, .c4 img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.c1 p, .c2 p, .c3 p, .c4 p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.c1 button, .c2 button, .c3 button, .c4 button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 2px solid #FFF;
+    border-radius: 0 10px 0 10px;
+    cursor: pointer;
+    width: 85px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    background: none;
+    color: #FFF;
+    filter: drop-shadow(0px 0px 30px rgba(71, 207, 115, 0.80));
+}
+
+.button1 {
+    background-color: #57ab74;
+    text-align: center;
+}
+
+.button2 {
+    background-color: #FFF;
+    color: #131417;
+    text-align: center;
+}
+
+.button3 {
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(50px);
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.button4 {
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(50px);
+    text-align: center;
+}
+
+
+
+
+
+/* گالری تصاویر */
+.gallery h2
+{
+    color: #FFF;
+    text-align: justify;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 45px 10px 15px 0;
+}
+.contg
+{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 0;
+    width: 100%;
+    
+}
+.contg img
+{
+     
+    padding: 0;
+    margin: 0;
+    flex: 1 0 25%;
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+/* تیم ما */
+.team {
+    padding: 50px 0;
+    text-align: right;
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.team-members .member {
+    text-align: center;
+}
+
+.team-members img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.team-members p {
+    margin: 10px 0 0;
+    font-size: 16px;
+}
+
+/* تماس با ما */
+.contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+
+.contact-item p {
+    margin: 0;
+}
+
+.contact-item.email {
+    border-radius: 10px;
+    background: #47CF73;
+   
+}
+
+.container fot
+
+
+/* فوتر */
+footer {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    color: #FFF;
+font-family: Kalameh;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 13px; /* 81.25% */
+}
