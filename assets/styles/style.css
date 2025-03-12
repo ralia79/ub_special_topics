@@ -1,0 +1,269 @@
+body{
+    width: 1440px; height: 3893px;
+    background-color:#131417 ;
+
+}
+.special-logo{
+    display: inline;
+    margin-left: auto;
+    padding-right: 61px;
+    padding-left: 1367px;
+    padding-top: 34px;
+    margin-right: 62;
+
+}
+.nav {
+    background-color: #131417; 
+    list-style-type: none;
+    text-align: right;
+    color: #FFFFFF;
+    vertical-align: top;
+    margin-right: 275px;
+    padding-top: 53px;
+  }
+  .nav li {
+    display: inline;
+    padding: 20px;
+    color: #FFFFFF;
+    font-family: Kalameh;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    vertical-align: top;
+    margin-top: 53px;
+  }
+  a{color: #FFFFFF;}
+  .signUp-button{
+    display: inline;
+    color: #131417;
+    font-family: Kalameh;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    border: 7px;
+    background-color: #47CF73;
+    border-radius: 7px;
+    height: 45.5px;
+    border-style: solid;
+    border-color: #47CF73;
+    box-shadow:  0px 0px 30px rgba(71, 207, 115, 0.80);
+    margin-left: 69px;
+    padding-top: 8px;
+    padding-bottom: 13.54px;
+    padding-left: 41px;
+    padding-right: 42px;
+    
+  }
+  #event-intro{
+    width: 1440px;
+    height: 3893px;
+    margin-right: auto;
+    margin-left: 155px;
+    padding-left: 155px;
+    padding-top: 164px;
+    position: static;
+    display: inline;
+  }
+  .first-photo{
+    border-radius: 162.5px 162.5px 10px 10px;
+    width: 325px;
+    height: 478px;
+    display: inline;
+  }
+  .h1{
+    color: #FFF;
+    text-align: right;
+    font-family: Kalameh;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    width: 453px;
+    height: 105px;
+    margin-left: auto;
+    margin-right: 500px;
+    vertical-align: text-top;
+    direction: rtl;
+  }
+  .p1{
+    color: #EFEFEF;
+    text-align: right;
+    font-family: Kalameh;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    width: 467px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: 500px;
+  }
+  #b1{
+    color: #FFF;
+    font-family: Kalameh;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-color: #47CF73;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 7px;
+    background-color: #131417;
+    margin-left: 59px;
+    padding-top: 14px;
+    padding-bottom: 13.54px;
+    padding-left: 45px;
+    padding-right: 44px;
+  }
+  .b2{
+    color: #FFF;
+    font-family: Kalameh;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background-color: #131417;
+    border: none;
+    margin-right: 8px;
+  }
+  #edu{
+    color: #FFF;
+    font-family: Kalameh;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 7px;
+    display: inline-flex;
+    position: relative;
+    
+    
+  }
+  .edu-img{
+    display: inline-flex;
+  }
+ #edu1{
+    color: #FFFFFF;
+ }
+ .hr{
+    
+    background-color: rgba(107, 107, 107, 0.80);
+
+ }
+#sponsors{
+    width: 1022px;
+    height: 92px;
+}
+.fig1{
+    display: inline-flex;
+    background-color: #E0E0E0; 
+    list-style-type: none;
+    margin: 79px;
+    padding-bottom: 100px;
+    width: 1022px;
+    height: 92px;
+}
+.fig1 li {
+    display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+.card{
+    color: #FFF;
+    text-align: right;
+    font-family: Kalameh;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    border-color:rgba(255, 255, 255, 0.40) ;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    vertical-align: baseline;
+    display: inline-table;
+    background-image: linear-gradient(to bottom,#47CF73,#131417);
+    height:70px;
+}
+.p12{
+    color: #FFF;
+    text-align: right;
+    font-family: Kalameh;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+.div-con{
+    color: #636267;
+    text-align: center;
+    font-family: Kalameh;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    float:none;
+    display: inline-flex;
+    margin-left: 26px;
+    margin-right: 26px;
+    border-color:#EDEDED ;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+table-style1{
+
+
+}
+#contact{
+    vertical-align: top;
+
+}
+.div2{
+    display: inline-flex;
+
+}
+.footer{
+    text-align: center;
+    color: #FFFFFF;
+}
+#team{
+    color: #FFFFFF;
+}
+#timeline{
+    display: block;
+    direction: rtl;
+    color: #FFFFFF;
+}
+.table-style2{
+    width: 274px;
+    height: 224px;
+    object-fit:fill;
+}
+#email{
+    background-color: #47CF73;
+    color: #FFFFFF;
+    padding-right:  16px; ;
+    padding-left: 15px;
+  
+}
+#call{
+    padding-right: 23.29px;
+    padding-left: 19px;
+  
+
+}
+#social{
+    padding-right: 27px;
+    padding-left: 27px;
+    padding-top: 1px;
+    padding-top: 1px;
+  
+}
+
+  
+    
+            
+
