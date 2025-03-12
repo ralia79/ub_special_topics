@@ -1,0 +1,287 @@
+/*
+  =============== 
+  Global Styles
+  ===============
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: white;
+}
+
+:root {
+  --clr-grey: rgba(107, 107, 107, 1);
+  --clr-green: rgba(71, 207, 115, 1);
+}
+
+/*
+  =============== 
+  Global Styles
+  ===============
+*/
+
+body {
+  display: flex;
+}
+
+.container {
+  width: 88.75%;
+  height: 100%;
+  padding-right: 113px;
+  padding-left: 67px;
+}
+
+.container-logo {
+  border-left: 1px solid var(--clr-grey);
+  width: 11.25%;
+  text-align: center;
+}
+
+.container-logo img {
+  width: 62px;
+  height: 67px;
+  margin-top: 32px;
+}
+
+.container header {
+  display: flex;
+  justify-content: space-between;
+  padding: 53px 0 97px 0px;
+}
+
+.container header ul {
+  display: flex;
+  gap: 60px;
+}
+
+.container header a {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.button-register {
+  width: 156px;
+  height: 45.54px;
+  background-color: var(--clr-green);
+  border-radius: 7px 20px 7px 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.event-intro {
+  display: flex;
+  justify-content: space-between;
+}
+
+#event-intro span {
+  color: white;
+}
+
+.event-info {
+  width: 480px;
+}
+
+.event-info h1 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 40px;
+}
+
+.event-info p {
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.event-info span {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.event-pic {
+  width: 345px;
+  margin-left: 68px;
+  position: relative;
+}
+
+.pic2 {
+  position: absolute;
+  margin-top: -130px;
+  margin-right: -130px;
+}
+
+.pic3 {
+  position: absolute;
+  margin-top: -110px;
+  margin-right: -165px;
+}
+
+.sign-in {
+  width: 156px;
+  height: 45.54px;
+  border-color: var(--clr-green);
+  background-color: black;
+  color: white;
+  border-radius: 0px 20px 0px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  box-decoration-break: none;
+  box-shadow: none;
+}
+
+.play {
+  width: 156px;
+  height: 45.54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: none;
+  border: none;
+}
+
+.btn-row {
+  margin-top: 30px;
+  display: flex;
+  gap: 70px;
+}
+
+.sponsors {
+  margin-top: 131px;
+  margin-bottom: 139px;
+  width: 1030px;
+  height: 100px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(2);
+}
+
+.back-pic {
+  position: absolute;
+}
+
+.over-pic {
+  z-index: 3;
+  position: relative;
+  margin-right: 40px;
+  width: 938px;
+  height: 77px;
+}
+
+.timeline {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.timeline h2 {
+  width: 100%;
+}
+
+.timeline img {
+  margin: auto;
+}
+
+.gallery {
+  width: 1096px;
+  height: 539px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 106px;
+}
+
+.team {
+  width: 1096px;
+  height: 539px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 106px;
+  flex-wrap: wrap;
+}
+
+.team img {
+  width: 203px;
+  height: 263px;
+  object-fit: cover;
+}
+
+.container footer {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  padding: 64px;
+}
+
+.contact-box {
+  margin-top: 30px;
+  width: 347px;
+  height: 64px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  border-radius: 10px;
+}
+
+.contact-box2 {
+  margin-top: 30px;
+  width: 347px;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  border-radius: 10px;
+  background-color: var(--clr-green);
+}
+
+.contact-box h4 {
+  color: rgba(99, 98, 103, 1);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.contact-box2 h4 {
+  color: white  ;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.contact{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 86px;
+}
