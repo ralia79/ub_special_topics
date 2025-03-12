@@ -1,0 +1,729 @@
+<html>
+<head>
+    <title></title>
+	<style>
+	    body
+		{
+		    background: #131417;
+			margin: 0;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: Kalameh;
+            font-style: normal;
+            line-height: normal;
+		}
+		.container1
+		{
+		    display: flex;
+			width: 100%;
+			height: 100%;
+		}
+		.logo
+		{
+		    flex: 1;
+		    display: flex;
+			justify-content: center;
+			align-items: top;
+			border-left: 2px solid #FFF;
+		}
+		.logo img
+		{
+		    max-width: 65%;
+			max-height: 65%;
+			margin: 0 0 500px 0;
+		}
+	    .content
+		{
+		    flex: 9;
+			padding: 20px;
+			overflow-y: auto;
+		}
+		.navbar
+		{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            
+        }
+		.navbar .right a
+		{
+            text-decoration: none;
+            margin-left: 40px;
+			color: #FFF;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .navbar .left .log-btn
+		{
+            background-color: #47CF73;
+            padding: 10px 35px;
+            border: none;
+            border-radius: 7px 16px 10px 16px;
+			color: #131417;
+            font-size: 16px;
+            font-weight: 700;
+
+        }
+		#event-intro
+		{
+		    display: flex;
+			width: 100%;
+			height: 100%;
+		}
+		.left-section
+		{
+		    flex: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.text
+		{
+		    color: #FFF;
+            text-align: right;
+            font-size: 40px;
+            font-weight: 900;
+		}	
+		.left-section img
+		{
+		    max-height: 90%;
+			max-width: 90%;
+		}
+		.right-section
+		{
+		    flex: 1;
+			padding: 20px;
+			justify-content: center;
+		}
+        .right-section h3,p,button
+		{
+		    color: #FFF;
+			text-align: right;
+		}
+
+		.right-section h3
+		{   
+            font-size: 18px;
+            font-weight: 700;   
+		}
+		.right-section p
+		{
+		    color: #EFEFEF;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 20px;
+		}
+		.right-section .btn1
+		{
+		    background-color: #131417;
+			font-size: 16px;
+            font-weight: 700;
+			padding: 10px 35px;
+            border-radius: 0 15px 0 15px;
+			border: solid #47CF73;
+			margin: 30px 0 30px 50px;
+		}
+		.right-section .btn2
+		{
+		    background-color: #131417;
+			font-size: 16px;
+            font-weight: 700;
+			border: none;
+	    }
+		.container2 .item
+		{
+            font-size: 14px;
+            font-weight: 700;
+			margin: 10px 15px 10px 80px;
+			display: inline-block;
+			text-align: center;
+		}
+		.img-table1
+		{
+            border-collapse: collapse;
+            width: 89.5%;
+            text-align: center;
+			background-color: #E0E0E0;
+			margin: 50px 0 0 0;
+        }
+        .img-table1 td
+		{
+            border: 0 solid #ccc;
+            padding: 15px;
+        }
+		#timeline
+		{
+		    justify-content: center;
+            align-items: center;
+			display: flex;
+		}
+		.container3
+		{
+		    position: relative;
+			
+			
+		}
+		.container3 h2
+		{
+		    padding:45px 0 70px 180px;
+			color: #FFF;
+            text-align: right;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 21px;
+		}
+		.img-vector
+		{
+		    
+			width: 560.289px;
+            height: 330.862px;
+            flex-shrink: 0;
+		}
+		.step p
+		{
+		    color: #FFF;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 21px;
+			white-space: nowrap;
+		}
+		.step
+		{
+		    position: absolute;
+		}
+		.step1
+		{
+		    right: 555px;
+			bottom: 325px;
+			left:0;
+		}
+		.step2
+		{
+		    right: 410px;
+			bottom: 310px;
+			left: 180px;
+		}
+		.step3
+		{
+		    right: 485px;
+			bottom:94px;
+			left:150px;
+		}
+		.step4
+		{
+		    
+			right: 155px;
+			bottom:210px;
+			left:0px;
+
+
+		}
+		.step5
+		{
+		    top:394px;
+			right: 355px;
+			bottom: 100px;
+			left: 200px;
+		}
+		.step6
+		{
+		    top: 397px;
+			right: 0px;
+			bottom: 0px;
+			left: 0px;
+	    }
+        .container4
+		{
+            position: relative;
+            width: 550px;
+            height: 550px;
+			
+        }
+		#information
+		{
+		    justify-content: center;
+            align-items: center;
+			display: flex;
+			padding: 110px 0 0 0;
+		}
+        .center-oval {
+            position: absolute;
+			display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 540px;
+            height: 263px;
+            flex-shrink: 0;
+			fill: #47CF73;
+            filter: drop-shadow(0px 0px 30px rgba(71, 207, 115, 0.40))
+        }
+        .center-oval img 
+		{
+            width: 135%;
+            height: 135%;
+        }
+        .text-overlay {
+            position: absolute;
+            text-align: center;
+            flex-shrink: 0;
+            color: #131417;
+            text-align: right;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 21px; 
+        }
+        .card
+		{
+            position: absolute;
+            width: 126px;
+            height: 168px;
+			color: #FFF;
+            border: 1px solid rgba(255, 255, 255, 0.40);
+            background: rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(50px);
+			border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .card1
+		{
+            top: 10%;
+            left: 10%;
+			width: 126px;
+            height: 168px;
+            transform: rotate(-9.915deg);
+            flex-shrink: 0;
+        }
+        .card2
+		{
+            top: 10%;
+            right: 10%;
+			width: 126px;
+            height: 168px;
+            transform: rotate(8.772deg);
+            flex-shrink: 0;
+        }
+        .card3
+		{
+            bottom: 10%;
+            left: 10%;
+			width: 126px;
+            height: 168px;
+            transform: rotate(9.541deg);
+            flex-shrink: 0;
+        }
+        .card4
+		{
+            bottom: 10%;
+            right: 10%;
+			width: 126px;
+            height: 168px;
+            transform: rotate(-11.953deg);
+            flex-shrink: 0;
+        }
+       .card button
+	   {
+            margin-top: 10px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 0 10px 0 10px;
+            cursor: pointer;
+			width: 85px;
+			border: 2px solid #FFF;
+            height: 28px;
+            stroke-width: 1px;
+            stroke: #FFF;
+            filter: drop-shadow(0px 0px 30px rgba(71, 207, 115, 0.80))
+			font-size: 14px;
+            font-weight: 400;
+            line-height: normal;
+        }
+		.button1, .button3, .button4
+		{
+            flex-shrink: 0;
+			width: 25px;
+            height: 15px;
+            color: #FFF;
+		}
+		.button1
+		{
+		    background-color: 57ab74;
+			text-align: center;
+		}
+
+		.button2
+		{
+		    flex-shrink: 0;
+			width: 25px;
+            height: 15px;
+            color: #131417;
+			background-color: #FFF;
+			text-align: center;
+		}
+	    .button3
+		{
+		    background: rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(50px);
+			margin:0 0 10px 0;
+			text-align: center;
+		}
+		.button4
+		{
+		    background: rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(50px);
+			text-align: center;
+		}
+		#gallery h2
+		{
+		    color: #FFF;
+            text-align: justify;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 20px;
+			padding: 45px 10px 15px 0;
+		}
+		.container5
+		{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 0;
+        }
+        .container5 img
+		{
+            flex: 1 0 25%;
+            width: 25%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            object-fit: cover;
+        }
+        #team h2
+		{
+		    color: #FFF;
+            text-align: justify;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 20px; 
+			padding: 45px 10px 15px 0;
+		}
+		.container6
+		{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+		}
+        .container6 img
+		{
+            flex: 0 1 calc(20% - 10px);
+            max-width: calc(20% - 10px);
+            height: auto;
+            margin: 0;
+            padding: 0;
+            object-fit: cover;
+        }
+		#contact h2
+        {
+		    color: #FFF;
+            text-align: justify;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 20px;
+			padding: 45px 10px 15px 0;
+		}
+		.contact
+		{
+		    display: flex;
+			justify-content: space-between;
+			width: 100%;
+			box-sizing: border-box;
+		}
+		.contact a
+		{
+		    display: flex;
+			justify-content: space-between;
+            align-items: center; 
+			width: 100%;
+			margin: 0 10px;
+			text-align: center;
+			padding: 15px 20px 15px 20px;
+			text-decoration: none;
+			font-size: 16px;
+            font-weight: 700;
+			border-radius: 10px;
+		}
+        .a-btn1
+		{
+			background-color: #131417;
+			color: #636267;    
+			border: 2px solid #636267;
+		}
+		.a-btn2
+		{
+			background-color: #47CF73;
+			color: #FFF;
+			border: 2px solid #47CF73;	
+		}
+		.right-text, .left-text
+		{
+            margin: 0px;
+            padding: 0px;
+		}
+		.footer
+		{ 
+            padding: 45px 10px 15px 0;
+            background-color: #131417;
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 13px;
+ 
+        }
+        .footer p
+		{
+            margin: 0;
+			text-align: center;
+        }
+		.card p
+		{
+		    text-align: center;
+		}
+
+	</style>
+
+
+</head>
+
+<body dir="rtl">
+    <div class="container1">
+        <div class="logo">
+		    <img src="Group 31.svg">
+		</div>
+		<div class="content">
+		
+		<header>
+        <nav class="navbar">
+	         <div class="right">
+		        <a href="#">خانه</a>
+			    <a href="#">درباره ما</a>
+			    <a href="#">تماس با ما</a>
+		    </div>
+		    
+			<div class="left">
+		        <button class="log-btn">ثبت نام/ورود</button>
+		    </div>
+	    </nav>
+	</header>
+	
+<!-------------------------------------------------->	
+	
+	<section id="event-intro">
+	
+		<div class="right-section">
+            <div>
+	            <span class="text">پنجمین دوره مسابقات برنامه نویسی آنلاین دانشگاه دولتی بجنورد</span>
+		        <img src="mushak.png">
+	        </div>
+		
+		    <h3>۱۲ الی ۲۰ اسفند ۱۴۰۰ به صورت غیر حضوری و آنلاین</h3>
+    
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+    
+            <button class="btn1">ثبت نام کنید</button>
+            
+			<img src="Group 19.png">
+			<button class="btn2">مشاهده ویدیو</button>
+            <hr>
+		
+        <div class="container2">
+            <img src="Education.png"><p class="item">ثبت نام کننده<br>28</p>
+			<img src="Work.png"><p class="item">حامیان برنامه<br>08</p>
+			<img src="3 User.png"><p class="item">برگزارکنندگان<br>04</p>
+		</div>
+		
+		</div>
+		
+	    <div class="left-section">
+            <img src="Group 14282.svg">
+        </div>
+
+    </section>
+	
+<!-------------------------------------------------->	
+	<section id="sponsors">
+	    
+		<table class="img-table1">
+		    <tr>
+			    <td><img src="snappTextLogo 1.png"></td>
+				<td><img src="Group 29.svg"></td>
+				<td><img src="daria_logo_green 1.png"></td>
+				<td><img src="logo-dark 1.png"></td>
+				<td><img src="logo-1-1 1.png"></td>
+			</tr>
+		</table>
+	</section>
+
+<!-------------------------------------------------->	
+    <section id="timeline">
+        <div class="container3">
+	    
+		<h2>نحوه برگزاری مسابقه</h2>
+	    <img src="vector.png" class="img-vector">
+        <div class="step step1">
+		    <p>پاسخ به سوال</p>
+		    <img src="1.png">
+		    <img src="line.png">
+		    <img src="dot.png">    
+		</div>
+		
+		<div class="step step2">
+		    <p>ثبت نام</p>
+		    <img src="2.png">
+		    <img src="line.png">
+		    <img src="dot.png">    
+		</div>
+		
+		<div class="step step3">
+		    <img src="dot.png">
+		    <img src="line.png">
+		    <img src="3.png">
+            <p>افتتاحیه و مرحله مقدماتی</p>			
+		</div>
+		
+		<div class="step step4">
+		    <p>مرحله نهایی</p>
+		    <img src="4.png">
+		    <img src="line.png">
+		    <img src="dot.png">    
+		</div>
+		
+		<div class="step step5">
+		    <img src="dot.png">
+		    <img src="line.png">
+		    <img src="5.png">
+            <p>مرحله انتخاب نفر اول</p>			
+		</div>
+		
+		<div class="step step6">
+		    <p>اختتامیه</p>
+		    <img src="6.png">
+		    <img src="line.png">
+		    <img src="dot.png">    
+		</div>
+    </div>
+    
+    
+	</section>
+
+<!-------------------------------------------------->
+    <section id="information">
+	<div class="container4">
+
+    <div class="center-oval">
+        <img src="Vector 9.png">
+        <p class="text-overlay">اطلاعات مسابقه</p>
+    </div>
+
+  <div class="card card1">
+    <img src="download 3.png">
+	<p>قوانین مسابقه</p>
+    <button class="button1">بیشتر</button>
+  </div>
+  
+  <div class="card card2">
+    <img src="download 4.png">
+	<p>جوایز مسابقه</p>
+    <button class="button2">بیشتر</button>
+  </div>
+  
+  <div class="card card3">
+    <img src="download 5.png">
+	<p>مزایای شرکت در مسابقه</p>
+    <button class="button3">بیشتر</button>
+  </div>
+  
+  <div class="card card4">
+    <img src="download 6.png">
+	<p>اهداف رویداد</p>
+    <button class="button4">بیشتر</button>
+  </div>
+  </section>
+  
+<!-------------------------------------------------->
+    <section id="gallery">
+        <h2>گالری تصاویر</h2>
+        
+		<div class="container5">
+                <img src="Rectangle 30.png">
+                <img src="Rectangle 31.png">
+                <img src="Rectangle 32.png">
+                <img src="Rectangle 33.png">
+
+                <img src="Rectangle 34.png">
+                <img src="Rectangle 36.png">
+                <img src="Rectangle 35.png">
+                <img src="Rectangle 37.png">
+        </div>
+    </section>
+	
+<!-------------------------------------------------->
+
+    <section id="team">
+        <h2>تیم ما</h2>
+            <div class="container6">
+                <img src="Subtract.png">
+				<img src="Subtract.png">
+				<img src="Subtract (2).png">
+				<img src="Subtract (1).png">
+				<img src="Subtract (3).png">
+				<img src="Subtract.png">
+				<img src="Subtract.png">
+				<img src="Subtract (2).png">
+				<img src="Subtract (1).png">
+				<img src="Subtract (3).png">
+            </div>
+    </section>
+<!--------------------------------------------------->
+    
+    <section id="contact">
+        <h2>تماس با ما</h2>
+            <div class="contact">
+                <a href="#" class="a-btn1">
+				    <span class="right-text">شماره کارشناس:</span>
+                    <span class="left-text">09354444274</span>
+				</a>
+				
+                <a href="#" class="a-btn2">
+				    <span class="right-text">ایمیل:</span>
+                    <span class="left-text">namadin@gmail.com</span>
+				</a>
+				
+				<a href="#" class="a-btn1">
+                    <span class="right-text">اینستاگرام:</span>
+                    <span class="left-text">@ubcopm4</span>
+                </a>
+            </div>
+    </section>	
+<!--------------------------------------------------->	
+	
+	<footer class="footer">
+            <p>تمام حقوق برای تیم پارشوماش محفوظ است.</p>
+    </footer>
+	
+		</div>
+    </div>
+</body>
+
+
+</html>
