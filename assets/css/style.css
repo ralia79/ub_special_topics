@@ -4,6 +4,8 @@
     --BACKGROUND: #131417;
     --FOREGROUND: #FFFFFF;
     --GREEN: #47CF73;
+    direction: rtl;
+
 }
 
 * {

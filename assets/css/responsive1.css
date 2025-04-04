@@ -1,0 +1,309 @@
+/*صفحع کامپیوتر
+*/@media screen and (max-width: 425px){
+.mobilheader{display: none;}
+.content-container-col-2{
+   display: flex;
+   .information-title-mobile {
+      display: none;
+    }
+    
+}
+.img2{display: none;}
+.information-container-mobile {display: none;}
+.contact-mobile{display: none;}
+}
+/*صفحه موبایل
+*/@media screen and ( max-width: 700px){
+.container-col-1,
+.header-col-1,
+.header-col-2,
+.content-container-col-2,
+.background {
+     display: none;
+   }
+.mobilheader{display: block;}
+body{background-color: black;
+
+   .container {
+      overflow-x: hidden; 
+    /*  margin-right: 10px;
+    margin-left: 10px;*/
+    }
+   }
+
+   .content-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .content-container-col-1 {
+      width: 100%;
+      margin: 0 auto;
+      text-align: right;
+      padding: 10px;
+    }
+
+.content-container-col-1 h1 {
+   font-size: 28px;
+   text-align:right;
+   padding: 5px;
+}
+
+  
+ .content-container-col-1 h5 {
+      text-align: right; 
+      font-size: 16px;
+      padding: 5px;
+  }
+
+  .content-container-col-1 p {
+   text-align: right; 
+   font-size: 16px;
+   padding: 5px;
+}
+
+
+.buttons {
+   display: flex;
+   flex-direction: row; 
+   gap: 20px; 
+   justify-content: center; 
+   width: 150%;
+}
+
+.img1{display: none;}  
+/*.img2{
+ Width: auto;
+Height:343px;
+Top:892px;
+Left:189px;
+    display: flex;
+}*/
+.path-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+ }
+
+ .path-title {
+
+   font-size: 28px;
+   text-align:right;
+   padding: 5px;
+   left: 500px;
+    display: flex;
+      text-align: right;
+      direction: rtl;
+      font-size: 25px;
+ 
+       }
+
+
+ .path-container .img2 {
+   display: block;
+   width: 90%;        
+   height: 585px;
+   object-fit: contain; }
+/*.container {
+   margin-right: 10px; 
+   margin-left: 10px;  
+ }*/
+ 
+   .button1{width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+background-color: rgba(71, 207, 115, 1);
+
+  cursor: pointer;
+  width: 156px;
+  height: 45.54px;
+  margin-top: 20%;
+  margin-right: 35%;
+  font-family: kalameh-medium;
+  font-size: small;
+  background-color: var(--GREEN);
+  border-radius: 7px 20px 7px 20px;
+  border: 0px;
+  box-shadow: 1px 1px 14px 1px var(--GREEN);
+}
+
+
+
+    .information-container{display: none;}
+    .information-title-mobile {
+      display: block;          
+      text-align:right;       
+      font-size: 24px;          
+      color: white;             
+      margin-bottom: 20px;     
+      margin-top: 30px;       
+      font-weight: bold;
+    }
+    .information-container-mobile {
+      margin-top: 350px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .information-container-mobile  {
+      margin-bottom: 10px;
+    }
+    
+    .info1 {
+      width: 100%;
+      margin-right:25%;
+      margin-bottom: 20px; 
+    }
+    
+    .info2,
+    .info3{
+      width: 30%; 
+      margin: 0 1%; 
+    }
+    .info3{
+    width: 360px;
+height: 200px;
+
+position: relative;  
+border-radius: 10px;
+
+    }
+
+    .info3-text {
+     position: absolute;
+      top: 385%; 
+      left: 50%;
+      right: 25%;
+      color: white; 
+      font-size: 18px;
+      font-weight: bold;
+      text-align:justify;
+      width: 80%; 
+      height: 50%;
+      background:none; 
+      padding: 80px;
+      border-radius: 5px
+       }
+
+       .button2{
+        display: flex;
+       }
+  
+  
+
+       .gallery-title-mobile{display: block;          
+        text-align:right;       
+        font-size: 24px;          
+        color: white;             
+        margin-bottom: 15px;     
+        margin-top: 30px;       
+        font-weight: bold;
+      }
+
+      .gallery-title  {display: none;}
+      .gallery-container{display: none;}
+      .gallery{
+        margin-right: 30%;
+        
+      }
+
+      .team-container{display: none;}
+      
+        .team-in-mobil {
+          background-color: black;
+          padding: 20px 10px;
+          text-align: center;
+        }
+      
+        .title-team-mobil {
+          color: white;
+          font-size: 24px;
+          margin-bottom: 20px;
+          text-align: right;
+          padding-right: 10px;
+        }
+      
+        .teamMobile {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 15px;
+        }
+      
+        .nafar1,
+        .nafar2 {
+          width: 45%;
+          padding: 10px;
+          box-sizing: border-box;
+          color: white;
+      
+        }
+      
+        .nafar1 img,
+        .nafar2 img {
+          width: 100%;
+          height: auto;
+          
+          margin-bottom: 10px;
+        }
+      
+        .nafar1 p,
+        .nafar2 p {
+          font-size: 14px;
+          margin: 0;
+          line-height: 1.5;
+        }
+      
+        .nafar1 span,
+        .nafar2 span {
+          font-size: 12px;
+          color: #ccc;
+        }
+
+        .infoteam1-mobil{
+          width: 142px;
+          height: 24px      ;
+          top: 2879px;
+          left: 239px;
+          padding: 15px;
+        }
+        .contact-container{display: none;}
+        .contact-mobile {
+          padding: 20px 10px;
+          background-color: black;
+          color: white;
+          text-align: center;
+        }
+      
+        .contact-title-mobile {
+          font-size: 24px;
+          margin-bottom: 20px;
+          text-align: right;
+          padding-right: 10px;
+        }
+      
+        .contact-image {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          flex-wrap: wrap;
+        }
+      
+        .contact-imgmob {
+          width: 35%;
+          padding: 10px;
+        }
+      
+        .contact-imgmob img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+      
+    
