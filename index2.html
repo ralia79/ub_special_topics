@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        body {
+            display: flex;
+            background: #131417;
+            justify-content: center;
+             color: white;
+             font-family: sans-serif;
+        
+
+
+
+        }   
+
+        .container {
+            height: 70px;
+            display: flex;
+            gap: 660px;
+            margin-top: 30px;
+        }
+        .class {
+           height: 100px;
+            display: flex;
+            justify-content: center;
+        }
+            .class12{
+                font-family: Kalameh;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #47CF73;
+                background: #131417;
+                border: none;
+            }
+            .n{
+                position: absolute;
+                /* width: 100%; */
+                height: 900px;
+                padding-left: 1000px;
+                padding-top: 120px;
+                
+            }
+           
+            h1{
+                position: relative;
+                color: aliceblue;
+                direction: rtl;
+                white-space: nowrap;
+                overflow: hidden;
+                font-family: Kalameh;
+                font-weight: 900;
+                font-size: 28px;
+                line-height: 100%;
+                letter-spacing: 0%; 
+                margin-right: 100px;        
+
+
+            }
+            p{
+                
+                margin-right: 100px;
+                position: relative;
+                color: aliceblue;
+                font-family: Kalameh;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 20px;
+                letter-spacing: 0%;
+                text-align: justify;
+                direction: rtl;
+
+            }
+            pre{
+               
+                position: relative;
+                color: aliceblue;
+                font-family: Kalameh;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 20px;
+                letter-spacing: 0%;
+                text-align: justify;
+                direction: rtl;  
+                
+                
+            }
+            
+.item{
+    position: absolute;
+    display: flex;
+    gap: 50px;
+}
+.b2{
+                position: relative;
+                right: 0px;
+                color: #FFF;
+                font-family: Kalameh;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 70;
+                line-height: normal;
+                background-color: transparent;
+                border: 2px solid #47CF73;
+                border-radius: 0% 25% 0% 25%;
+                padding-right:2px;
+                right: 40px;
+                padding-left: 2px;
+                width: 130px;
+                
+                
+    }
+    .item2{
+        position: relative;
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 13px;
+        background-color: #131417;
+        border: none;
+       padding-left: 190px;
+    }
+/* div{
+    display: inline-block;
+} */
+.m-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    margin-top: 10px;
+    margin-right: 0px;
+    direction: rtl;
+}
+.ms-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 2px;
+    color: rgb(252, 249, 249);
+    text-indent: 20px;
+    font-size: 18px;
+    
+}
+.rectangle{
+
+    align-items: center;
+   
+    margin-top: 250px;
+}
+.c{
+            position: relative;
+            width: 400px; 
+            height: 100px; 
+            margin: auto; 
+        }
+        .curve-image {
+            position: absolute;
+            right: 300px;
+            margin-top: 90px;
+            padding: 10px;
+        }
+        .text {
+            position: absolute;
+            color: white;
+            font-size: 20px;
+           
+        }
+        .text1 {
+            size: 15px;
+            left: 50px;
+            right: 900px;
+            margin-right: 500px;
+            bottom:0px;
+            top: 80px;
+           
+       }
+       .noghte{
+        position: absolute;
+        bottom: 0%;
+        right: 106px;
+        left: 85px;
+        
+       }
+       .v1{
+        bottom: 0px;
+        top: 10px;
+        right: 0px;
+        left: 20px;
+        position: absolute;
+       }
+       .noghte1{
+        position: absolute;
+        top: 180px;
+       
+        right: 106px;
+        left: 85px;
+        
+       }
+       .v2{
+        bottom: 0px;
+        top: 180px;
+        
+        right: 120px;
+        left: 100px;
+        position: absolute;
+       }
+       .text2 {
+            size: 15px;
+            left: 160px;
+            right: 100px;
+            margin-right: 500px;
+            bottom:0px;
+            top: 130px;    
+       }
+       .noghte2{
+        position: absolute;
+        top: 250px;
+        bottom: 0%;
+        right: 106px;
+        left: 85px;
+        
+       }
+       .v3{
+        bottom: 0px;
+        top: 10px;
+        right: 0px;
+        left: 10px;
+        position: absolute;
+       }
+       .text3 {
+            size: 15px;
+            left: 57px;
+            right: 100px;
+            margin-right: 500px;
+            bottom:0px;
+            top: 230px;    
+       }
+       .noghte3{
+        position: absolute;
+        top: 300px;
+        bottom: 0%;
+        right: 106px;
+        left: 85px;
+        
+       }
+       .v4{
+        bottom: 0px;
+        top: 295px;
+        right: 120px;
+        left: 100px;
+        position: absolute;
+       }
+       .text4 {
+            size: 15px;
+            left: 177px;
+            right: 12px;
+            margin-right: 500px;
+            bottom:0px;
+            top: 249px;    
+       }
+       .noghte4{
+        position: absolute;
+        top: 350px;
+        bottom: 0%;
+        right: 106px;
+        left: 85px;
+        
+       }
+       .v5{
+        bottom: 0px;
+        top: 350px;
+        right: 150px;
+        left: 60px;
+        position: absolute;
+       }
+       .text5 {
+            size: 15px;
+            left: 65px;
+            right: 12px;
+            margin-right: 500px;
+            bottom:0px;
+            top: 349px;    
+       }
+       .noghte5{
+        position: absolute;
+        top: 430px;
+        bottom: 0%;
+        right: 106px;
+        left: 85px;
+        
+       }
+       .v6{
+        bottom: 0px;
+        top: 430px;
+        right: 150px;
+        left: 100px;
+        position: absolute;
+       }
+       .text6{
+            size: 15px;
+            left: 160px;
+            right: 12px;
+            margin-right: 500px;
+            bottom:0px;
+            top: 390px;  
+       }
+       
+     
+.container2 {
+    display: flex;
+    display: grid;
+    margin-right: 12PX;
+    flex-direction: column;
+    gap: 20px;
+}
+.r {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    width: 130px;
+}
+.large {
+    flex: 2;
+    padding: 30px;
+}
+.button0 {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;  
+    background: rgba(255,255,250,0.1);
+    border-radius: 15% 15% 15% 15%;
+    border: 2px solid gray;
+    color :#eae4e4;
+    width: 90px;
+}
+.button14{
+        margin-left: 150px;
+        width: 110px;
+        height: 40px;
+        border-radius: 0% 25% 0% 25%;
+        flex-shrink: 0;
+        fill: #47CF73;
+        filter: drop-shadow(0px 0px 30px rgba(71, 207, 115, 0.80));
+        flex-shrink: 0;
+        border-radius: 0% 25% 0% 25%;
+        background-color: #47CF73;
+}
+.gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4,auto);
+        min-width: 200px;
+        margin: 20px auto;
+        padding-right: 10px;
+            
+}
+.gallery img {
+            height: 200px; 
+            margin: 0;
+            border-radius: 0; 
+            box-shadow: none; 
+            display: block;          
+}
+.team{
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+}
+.teamimg1{
+            height: 200px;
+            margin: 10px;
+            border-radius: 0; 
+            box-shadow: none; 
+            display: block; 
+}
+.team h2{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.team p{
+    font-size: 14px;
+    margin-right: 180px;
+    /* margin-left: 50px; */
+
+}
+.teamimg2{
+    margin-right: 160px;
+            margin: 10px;
+            border-radius: 0; 
+            box-shadow: none; 
+            display: block; 
+}
+.footer {
+            text-align: center;
+            padding: 20px;
+            width: 80%;
+            border-radius: 10px;
+        }
+        .contact {
+            display: flex;
+            justify-content: center;
+            gap:10px;
+            margin-bottom: 10px;
+        }
+        .contact a {
+            color: #ccc;
+            display: show;
+            font-size: 18px;
+        }
+
+        .copyright {
+            font-size: 16px;
+            direction: rtl;
+        }
+</style>
+<body>
+    <div class="container">
+     <div class="class1"><input type="submit" value="ثبت نام / ورود" class="class12"></div>
+     <div class="class2"><img src="icon/Group 31.png" alt=""></div>
+     <div class="class3"><img src="icon/Group 68.png" alt=""></div>
+    </div>
+    <br>
+    <br>
+    <div class="n">
+        <h1>پنجمین دوره مسابقات برنامه نویسی<br> 
+           <br> آنلاین دانشگاه دولتی بجنورد </h1>
+            <p>۱۲ الی ۲۰ اسفند ۱۴۰۰ به صورت غیر حضوری و آنلاین </p>
+                <pre>
+                           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                           طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                           سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+                           متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+                           درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با
+                           نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و
+                           فرهنگ پیشرو در زبان فارسی ایجاد کرد
+                    </pre>
+                    
+                    
+
+
+                    <div class="item">
+                        
+                        
+                        <div ><button class="item2"> مشاهده ویدیو <img src="icon/Group 19.svg" alt=""></button></div>
+                        
+                        <div><button class="b2"> ثبت‌ نام کنید </button></div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr width="100%">
+                    <div class="m-container">
+                        <div class="ms-button">
+                            <img src="icon/Education.png" alt="" ><pre style="text-align: center;"><br><br>ثبت نام کننده 
+                                <br>28</pre> </div>
+                        <div class="ms-button"> <img src="icon/Work.png" alt=""> <pre style="text-align: center;"><br><br>حامیان برنامه
+                            <br> 08 </pre></div> 
+                       <div class="ms-button"><img src="icon/3 User.png" alt=""><pre style="text-align: center;"><br><br >برگزار کنندگان 
+                            <br> 04 </pre></div> 
+                        
+                            
+                        
+            
+                       </div>
+                       
+                       <div class="rectangle">
+                        <hr width="100%">
+                        <img src="icon/Rectangle 4.png" alt="" >
+                    </div>
+                    <br>
+                    <br>
+                    <h1>نحوه برگزاری مسابقه</h1>
+                    <div class="c">
+                     <img src="icon/Line 31.png" alt="" class="curve-image">
+                     <br>
+                     <img src="icon/Ellipse 11.png" alt="" class="noghte">
+                     <div class="text text1"><pre>پاسخ به سوال</pre>
+                        <br>
+                        <img src="icon/Vector.png" alt="" class="v1">
+                    </div>
+                    <img src="icon/Ellipse 11.png" alt="" class="noghte1">
+                    <img src="icon/Vector2.png" alt="" class="v2">
+                    <div class="text text2"><br><pre>ثبت نام</pre>
+                   </div>
+                   <img src="icon/Ellipse 11.png" alt="" class="noghte2">
+                     <div class="text text3"><pre>افتتاحیه و مرحله 
+    مقدماتی</pre>
+                        <br>
+                        <img src="icon/Vector3.png" alt="" class="v3"> </div>
+
+                    <img src="icon/Ellipse 11.png" alt="" class="noghte3">
+                    <img src="icon/Vector4.png" alt="" class="v4">
+                    <div class="text text4"><br><pre>مرحله نهایی</pre>
+                   </div>
+                   <img src="icon/Ellipse 11.png" alt="" class="noghte4">
+                   <img src="icon/Vector5.png" alt="" class="v5">
+                   <div class="text text5"><pre>انتخابی نفر اول</pre>
+                      <br></div>
+                       <img src="icon/Ellipse 11.png" alt="" class="noghte5">
+                    <img src="icon/Vector6.png" alt="" class="v6">
+                    <div class="text text6"><br><pre>اختتامیه</pre>
+                   </div>
+                    </div>
+                    
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                   
+                    <input type="button" value="ثبت نام" class="button14">
+                   
+                   <h1>اطلاعات مسابقه</h1>
+                   <br>
+                   <br>
+                   <div class="container2">
+                    <div class="r">
+                        <div class="card">
+                            <div class="axs"><img src="icon/download 3.png" alt=""></div>
+                            <h3>قوانین مسابقه</h3>
+                            <button class="button0">بیشتر</button>
+                        </div>
+                        <div class="card">
+                            <div class="axs"><img src="icon/download 6.png" alt=""></div>
+                            <h3>اهداف رویداد</h3>
+                            <button class="button0">بیشتر</button>
+                        </div>
+                        <div class="card">
+                            <div class="axs"><img src="icon/download 4.png" alt=""></div>
+                            <h3>جوایز مسابقه</h3>
+                            <button class="button0">بیشتر</button>
+                        </div>
+                    </div>
+                    <div class="r">
+                        <div class="card large">
+                            <h3> !همین حالا شروع کن <img src="icon/dast.png" alt=""></h3>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.</p>
+                            <button class="button0">ثبت نام</button>
+                        </div>
+                        <div class="card">
+                            <div class="axs"><img src="icon/download 5.png" alt=""></div>
+                            <h3>مزایای شرکت در مسابقه</h3>
+                            <button class="button0">بیشتر</button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h1>گالری تصاویر</h1>
+                <div class="gallery">
+                    <div><img src="img/Rectangle 39.png" alt=""></div>
+                    <div><img src="img/Rectangle 40.png" alt=""></div>
+                    <div><img src="img/Rectangle 43.png" alt=""></div>
+                    <div><img src="img/Rectangle 42.png" alt=""></div>
+                    <div><img src="img/Rectangle 41.png" alt=""></div>
+                    <div><img src="img/Rectangle 401.png" alt=""></div>
+                    <div><img src="img/Rectangle 44.png" alt=""></div>
+                    <div><img src="img/Rectangle 391.png" alt=""></div>
+                </div>
+                <br>
+                <h1>تیم ما</h1>
+                <div class="team">
+                    <div>
+                        <img src="img/Subtract2.png" alt="" class="img1">
+                        <h2>حسن روحانی</h2>
+                        <p>طراح رابط کاربری</p>
+                        <br>
+                        <br>
+                        <img src="img/Group 91.png" alt="" class="img2">
+                    </div>
+                    <div>
+                        <img src="img/Subtract2.png" alt="" class="img1">
+                        <h2>دکتر کیانی</h2>
+                        <p>طراح سوالات</p>
+                        <br>
+                        <br>
+                        <img src="img/Group 91.png" alt="" class="img2">
+                    </div>
+                    
+                </div>
+                <div class="team">
+                    <div>
+                        <img src="img/Subtract2.png" alt="" class="img1">
+                        <h2>حسن روحانی</h2>
+                        <p>طراح رابط کاربری</p>
+                        <br>
+                        <br>
+                        <img src="img/Group 91.png" alt="" class="img2">
+                    </div>
+                    <div>
+                        <img src="img/Subtract2.png" alt="" class="img1">
+                        <h2>دکتر کیانی</h2>
+                        <p>طراح سوالات</p>
+                        <br>
+                        <br>
+                        <img src="img/Group 91.png" alt="" class="img2">
+                    </div>
+                    
+                </div>
+
+
+                <div class="footer">
+                    <div class="contact">
+                        <a href="codeUBcomp5@gmail.com"><img src="icon/email.png" alt=""></a>
+                        <a href="+989390375856"><img src="icon/Calling.png" alt=""><img src="icon/+989390375856.png" alt=""></a>
+                    </div>
+                    <div class="contact">
+                        
+                    </div>
+                    <div class="copyright">
+                        تمام حقوق برای شرکت پارشوماش محفوظ است.
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                 </div>
+    </div>
+<br>
+
+
+
+
+
+
+    
+
+</body>
+</html>
