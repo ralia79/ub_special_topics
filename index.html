@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile-style.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <title>صفحه اصلی</title>
 </head>
@@ -16,19 +17,26 @@
         </div>
         <div class="container-col-2">
             <header>
-                <div class="header-col-1">
-                    <nav>
-                        <ul>
-                            <li><a href="#">خانه</a></li>
-                            <li><a href="#">درباره ما</a></li>
-                            <li><a href="#">تماس باما <i class="fa fa-angle-down"></i></a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header-col-2">
+                <div class="header-mobile">
+                  <div class="mobile-toggle">
+                    <i class="fa fa-bars mobile-menu-toggle"></i>
+                  </div>
+                  <div class="mobile-logo">
+                    <img src="assets/images/logo/logo.png" alt="لوگو">
+                  </div>
+                  <div class="mobile-login">
                     <button>ثبت نام / ورود</button>
+                  </div>
                 </div>
-            </header>
+                <nav class="mobile-nav">
+                  <ul>
+                    <li><a href="#">خانه</a></li>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                  </ul>
+                </nav>
+              </header>
+              
             <div class="content-container">
                 <div class="content-container-col-1">
                     <h1>پنجمین دوره مسابقه برنامه نویسی آنلاین دانشگاه دولتی بجنورد &#x1F680;</h1>
@@ -57,17 +65,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="content-container-col-2">
+                <div class="content-container-col-2 hide-on-mobile">
                     <img src="assets/images/banner/banner.png" class="banner" alt="مسابقات برنامه نویسی">
                     <img src="assets/images/banner/code.png" class="code" alt="نمونه کد">
                     <img src="assets/images/icons/c-plus-plus.png" class="c" alt="لوگوی زبان سی پلاس پلاس">
                 </div>
-            </div>
-            <div class="sponser-container">
-                <img src="assets/images/banner/sponser.png" alt="">
-            </div>
-            <div class="path-container">
-                <div class="path-container-child">
                     <div class="path-box">
                         <img src="assets/images/banner/path.png" alt="">
                         <p class="path-title">نحوه برگزاری مسابقه</p>
