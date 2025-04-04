@@ -1,0 +1,600 @@
+
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+	 @media (min-width: 480px) {
+        body
+		{
+		    background: #131417;
+			margin: 0;
+			padding: 35px;
+			font-family: Kalameh;
+            font-style: normal;
+            line-height: normal;
+		}
+		.header
+		{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 80px;
+			
+		}
+        .log-btn
+		{
+		    border: none;
+			color: #47CF73;
+			background-color: #131417;
+		}
+		.text
+		{
+		    color: #FFF;
+		}
+        .btn1, .btn2
+		{
+		    background-color: #131417;
+			color: #FFF;
+			font-size: 16px;
+            font-weight: 700;
+		}
+		.btn1
+		{
+			padding: 10px 35px;
+            border-radius: 8px 18px 8px 18px;
+			border: solid #47CF73;
+			margin: 30px 0 30px 50px;
+		}
+		.btn2
+		{
+			border: none;
+	    }
+		.container1 .item
+		{
+            font-size: 14px;
+            font-weight: 700;
+			margin: 10px 15px 10px 30px;
+			display: inline-block;
+			text-align: center;
+			color: #FFF;
+			justify-content: center;
+		}
+		.img-table1
+		{
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+			background-color: #E0E0E0;
+			margin-top: 50px;
+        }
+        .img-table1 td
+		{
+            border: 0 solid #ccc;
+            padding: 5px;
+        }
+		.btn_3
+		{
+		    text-align: center;
+		}
+		#timeline h3
+		{
+			color: #FFF;
+            text-align: right;
+			font-size: 20px;
+            font-weight: 700;
+            line-height: 21px;
+			padding-top: 30px;
+		}
+		.btn3
+		{
+
+		    background-color: #47CF73;
+			color: #131417;
+			box-shadow: 0px 6px 12px rgb(76, 175, 80, 1);
+			font-size: 16px;
+            font-weight: 700;
+			padding: 10px 35px;
+            border-radius: 8px 18px 8px 18px;
+			border: solid #47CF73;
+			margin: 30px 0 30px 50px;
+		}
+		.container2
+		{
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+        }
+        #timeline h3
+		{
+            margin-bottom: 20px;
+	        color: #FFF;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 21px;
+        }
+        .timeline
+		{
+            position: relative;
+        }
+        .green-line
+		{
+            width: 5px;
+            height: 400px;
+            background-color: transparent;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .steps
+		{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 38px;
+            position: relative;
+            margin-top: 20px;
+        }
+        .step
+		{
+            position: relative;
+            text-align: center;
+        }
+        .dot1
+		{
+            padding:0 134px 38px 0;
+        }
+        .dot2
+		{
+            padding:10px 0 15px 17px;
+        }
+        .dot3
+		{
+            padding:15px 200px 0 0;
+        }
+        .dot4
+		{
+            padding:25px 0 0 48px;
+        }
+        .dot5
+		{
+            padding:20px 145px 0 0;
+        }
+        .dot6
+		{
+            padding:24px 0 0 22px;
+        }
+        .number1
+        {
+            padding: 0 0 30px 0;
+        }
+        .number2
+        {
+            padding: 0 0 15px 0;
+        }
+		.move-text1
+		{
+            display: inline-block;
+            transform: translate(-5px, -30px);
+        }
+		.move-text2
+		{
+            display: inline-block;
+            transform: translate(12px, -15px);
+        }
+        .container2 span
+        {
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21px;
+        }
+		#information h3
+		{
+		    color: #FFF;
+            text-align: right;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 21px;
+			padding-top:30px;
+		}
+		.container3
+		{
+            display: grid;
+            gap: 20px;
+            padding-top:30px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .card
+		{
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.40);
+            background: rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(50px);
+            width: 126px;
+            height: 168px;
+            font-size: 16px;
+            padding: 15px;
+            text-align: center;
+        }
+		.card1
+		{
+		    width: 263px;
+            height: 168px;
+			text-align: right;
+		}
+        .card img
+		{
+            width: 50px;
+            height: 50px;
+        }
+        .card h4
+		{
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 21px;
+            margin: 10px 0;
+            
+        }
+        .card p
+		{
+			color: #EFEFEF;
+            text-align: justify;
+            font-family: Kalameh;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+        .card button
+		{
+            margin-top: 14px;
+            background-color: 2B2C2F;
+			border-radius: 10px 12px 10px 12px;
+			border: solid #7A7A7A;
+            color: white;
+            padding: 10px 20px;
+			color: #FFF;
+            font-size: 14px;
+            font-weight: 400;
+
+        }
+        .card button:hover
+		{
+            background-color: #131417;
+        }
+		#gallery h3
+		{
+		    color: #FFF;
+            text-align: right;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 21px;
+			padding-top:30px;
+			padding-bottom: 20px;
+		}
+		.container4
+		{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .container4 img
+		{
+            width: 50%;
+            height: auto;
+	    }
+		#team h3
+		{
+		    color: #FFF;
+            text-align: right;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 21px;
+			padding-top:30px;
+			padding-bottom: 20px;
+		}
+
+		.container5
+		{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .image-box
+		{
+            text-align: center;
+        }
+       .image-box img
+	    {
+            width: 190px;
+            height: auto;
+	    }
+        .image-box h4
+        {
+            color: #FFF;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 20px; 
+        }
+        .image-box p
+        {
+		    color: #6B6B6B;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 20px; 
+		}		
+		.image-box2
+		{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px; 
+            padding: 20px; 
+        }
+        .image-box2 img
+		{
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+		}
+		.container6
+		{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            gap: 40px; 
+            width: 80%; 
+            max-width: 600px;
+        }
+        .contact
+		{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+	        justify-content: center;
+        }
+        .icon
+		{
+            width: 30px; 
+            height: 30px;
+        }
+        .text
+		{
+            color: #FFF;
+            text-align: right;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 13px; /* 92.857% */
+            letter-spacing: 1.26px;
+            direction: ltr;
+        }
+		.footer
+		{
+            text-align: center;
+            padding: 20px;
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 13px;
+            letter-spacing: 1.44px;
+        }
+	}
+    </style>
+</head>
+    <body dir="rtl">
+        <div class="header">
+	        <img src="Group 68.png" class="logo">
+	        <img src="Group 31.png" class="center-logo">
+	        <button class="log-btn" class="log-btn">ثبت نام/ورود</button>    
+	    </div>
+    
+<!-------------------------------------------------->	
+
+	<section id="event-intro">
+        <h1 class="text">پنجمین دوره مسابقات برنامه نویسی آنلاین دانشگاه دولتی بجنورد</h1>
+		<h3 class="text">۱۲ الی ۲۰ اسفند ۱۴۰۰ به صورت غیر حضوری و آنلاین</h3>
+		<p class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+	    
+        <button class="btn1">ثبت نام کنید</button>
+            
+		<img src="Group 19.png">
+		<button class="btn2">مشاهده ویدیو</button>
+			
+		<div class="container1">
+		    <hr>
+            <img src="Education.png"><p class="item">ثبت نام کننده<br>28</p>
+			<img src="Work.png"><p class="item">حامیان برنامه<br>08</p>
+			<img src="3 User.png"><p class="item">برگزارکنندگان<br>04</p>
+			<hr>
+		</div>        
+	</section>
+	
+<!-------------------------------------------------->	
+
+	<section id="sponsors">
+	    
+		<table class="img-table1">
+		    <tr>
+				<td><img src="Group 29.svg"></td>
+				<td><img src="daria_logo_green 1.png"></td>
+				<td><img src="logo-dark 1.png"></td>
+			</tr>
+		</table>
+	</section>
+<!-------------------------------------------------->	
+    
+	<section id="timeline">
+	<h3>نحوه برگزاری مسابقه</h3>
+        <div class="container2">
+            <img src="Line 31.png" alt="خط سبز" class="green-line">
+            
+			<div class="steps">
+                <div class="step">
+                    <img src="dot.png" class="dot1">
+                    <img src="1.png" class="number1">
+					<span class="move-text1">پاسخ به سوال</span>
+                </div>
+				
+                <div class="step">
+				    <span class="move-text2">ثبت نام</span>
+                    <img src="2.png" class="number2">
+					<img src="dot.png" class="dot2">
+                </div>
+				
+                <div class="step">
+                    <img src="dot.png" class="dot3">
+                    <img src="3.png" class="number">
+                    <span>افتتاحیه و مرحله مقدماتی</span>
+                </div>
+				
+                <div class="step">
+				    <span>مرحله نهایی</span>
+                    <img src="4.png" class="number">
+					<img src="dot.png" class="dot4">
+                </div>
+				
+                <div class="step">
+                    <img src="dot.png" class="dot5">
+                    <img src="5.png" class="number">
+					<span>انتخابی نفر اول</span>
+                </div>
+				
+                <div class="step">
+				    <span>اختتامیه</span>
+                    <img src="6.png" class="number">
+					<img src="dot.png" class="dot6">
+                </div>
+            </div>
+        </div>
+	</section>
+
+<!-------------------------------------------------->	
+	
+	<section id="information">
+	<h3>اطلاعات مسابقه</h3>
+	    <div class="container3">
+        <div class="card">
+            <img src="download 4.png">
+            <h4>جوایز مسابقه</h4>
+            <button>بیشتر</button>
+        </div>
+		
+        <div class="card">
+            <img src="download 6.png">
+            <h4>اهداف رویداد</h4>
+            <button>بیشتر</button>
+        </div>
+		
+        <div class="card">
+            <img src="download 3.png">
+            <h4>قوانین مسابقه</h4>
+            <button>بیشتر</button>
+        </div>
+		
+		<div class="card">
+            <img src="download 5.png">
+            <h4>مزایای شرکت در مسابقه</h4>
+            <button>بیشتر</button>
+        </div>
+		
+        <div class="card card1">
+            
+            <h4>✌🏻 همین حالا شروع کن!</h4>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.</p>
+            <button>ثبت نام</button>
+        </div>    
+    </div>
+	</section>
+
+<!-------------------------------------------------->
+    
+	<section id="gallery">
+        <h3>گالری تصاویر</h3>
+        
+		<div class="container4">
+            <img src="Rectangle 31.png">
+            <img src="Rectangle 32.png">
+            <img src="Rectangle 33.png">
+            <img src="Rectangle 37.png">
+            <img src="Rectangle 35.png">
+            <img src="Rectangle 36.png">
+            <img src="Rectangle 34.png">
+            <img src="Rectangle 35.png">
+        </div>
+    </section>
+
+<!-------------------------------------------------->
+
+    <section id="team">
+        <h3>تیم ما</h3>
+		<div class="container5">
+            <div class="image-box">
+                <img src="Subtract (1).png">
+				<h4>دکتر کیانی</h4>
+			    <p>طراح سوالات</p>	
+            </div>
+			
+			<div class="image-box">
+			    <img src="Subtract.png">
+			    <h4>حسن روحانی</h4>
+			    <p>طراح رابط کاربری</p>
+			</div>
+		</div>
+		
+		<div class="image-box2">
+		    <img src="Group 92.png">
+		    <img src="Group 92.png">
+		</div>
+		
+    </section>
+
+<!-------------------------------------------------->
+	
+	    <section id="team">
+		<div class="container5 double">
+            <div class="image-box">
+                <img src="Subtract (1).png">
+				<h4>دکتر کیانی</h4>
+			    <p>طراح سوالات</p>	
+            </div>
+			
+			<div class="image-box">
+			    <img src="Subtract.png">
+			    <h4>حسن روحانی</h4>
+			    <p>طراح رابط کاربری</p>
+			</div>
+		</div>
+		
+		<div class="image-box2">
+		    <img src="Group 92.png">
+		    <img src="Group 92.png">
+		</div>
+    </section>
+	
+<!-------------------------------------------------->
+
+    <section id="contact">
+	    <div class="container6">
+		<div class="contact">
+		    <span class="text">+989390375856</span>
+            <img src="Calling.png" class="icon">
+        </div>
+		
+        <div class="contact">
+            <span class="text">codeUBcomp5@gmail.com</span>
+			<img src="Message.png" class="icon">
+        </div>   
+        </div>
+    </section>
+	
+<!--------------------------------------------------->	
+	
+	<footer class="footer">
+        <p>تمام حقوق برای شرکت پارشوماش محفوظ است.</p>
+    </footer>
+	
+</body>
+</html>
